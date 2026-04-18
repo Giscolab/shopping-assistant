@@ -1,0 +1,21 @@
+[package]
+name = "size-intelligence-studio"
+version = "0.1.0"
+description = "Local-first clothing size recommendation desktop app"
+authors = ["Size Intelligence Studio"]
+edition = "2021"
+
+[lib]
+name = "size_intelligence_studio_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+dirs = "6"
+rusqlite = { version = "0.37", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "2", features = [] }
+thiserror = "2"

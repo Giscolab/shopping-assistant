@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Aptos", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Cascadia Code", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-xs: calc(var(--radius) * 0.5);
+  --radius-sm: calc(var(--radius) * 0.75);
+  --radius-md: calc(var(--radius) * 0.875);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.5);
+}
+
+:root {
+  color-scheme: light;
+  --radius: 0.7rem;
+  --background: oklch(0.985 0.006 93);
+  --foreground: oklch(0.18 0.026 260);
+  --card: oklch(0.998 0.003 93);
+  --card-foreground: oklch(0.18 0.026 260);
+  --popover: oklch(0.998 0.003 93);
+  --popover-foreground: oklch(0.18 0.026 260);
+  --primary: oklch(0.32 0.086 224);
+  --primary-foreground: oklch(0.98 0.012 100);
+  --secondary: oklch(0.91 0.028 88);
+  --secondary-foreground: oklch(0.24 0.036 250);
+  --muted: oklch(0.93 0.015 88);
+  --muted-foreground: oklch(0.47 0.028 250);
+  --accent: oklch(0.77 0.116 82);
+  --accent-foreground: oklch(0.19 0.025 245);
+  --destructive: oklch(0.55 0.19 29);
+  --destructive-foreground: oklch(0.99 0.003 90);
+  --border: oklch(0.86 0.018 88);
+  --input: oklch(0.86 0.018 88);
+  --ring: oklch(0.55 0.1 224);
+}
+
+.dark {
+  color-scheme: dark;
+  --background: oklch(0.16 0.025 250);
+  --foreground: oklch(0.97 0.012 98);
+  --card: oklch(0.205 0.032 250);
+  --card-foreground: oklch(0.97 0.012 98);
+  --popover: oklch(0.205 0.032 250);
+  --popover-foreground: oklch(0.97 0.012 98);
+  --primary: oklch(0.78 0.126 82);
+  --primary-foreground: oklch(0.18 0.026 250);
+  --secondary: oklch(0.27 0.032 247);
+  --secondary-foreground: oklch(0.96 0.01 98);
+  --muted: oklch(0.25 0.028 247);
+  --muted-foreground: oklch(0.7 0.025 250);
+  --accent: oklch(0.32 0.053 214);
+  --accent-foreground: oklch(0.96 0.012 98);
+  --destructive: oklch(0.62 0.2 31);
+  --destructive-foreground: oklch(0.99 0.003 90);
+  --border: oklch(0.31 0.032 247);
+  --input: oklch(0.31 0.032 247);
+  --ring: oklch(0.78 0.126 82);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 1024px;
+  background:
+    radial-gradient(circle at 12% 8%, color-mix(in oklab, var(--primary) 10%, transparent), transparent 32rem),
+    linear-gradient(135deg, color-mix(in oklab, var(--background) 96%, var(--accent)), var(--background));
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-feature-settings:
+    "rlig" 1,
+    "calt" 1;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}

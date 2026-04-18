@@ -1,0 +1,14 @@
+node_modules
+dist
+.vite
+.env
+.env.*
+src-tauri/target
+playwright-report
+test-results
+coverage
+.codex-tmp
+*.tsbuildinfo
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
