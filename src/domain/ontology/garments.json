@@ -7,14 +7,46 @@
     "createdFor": "Size Intelligence Studio"
   },
   "families": [
-    { "id": "tops", "label": "Hauts", "description": "Pièces portées sur le buste." },
-    { "id": "bottoms", "label": "Bas", "description": "Pièces portées sur bassin et jambes." },
-    { "id": "outerwear", "label": "Outerwear", "description": "Surcouches et vêtements de protection." },
-    { "id": "underwear", "label": "Sous-vêtements", "description": "Première couche proche du corps." },
-    { "id": "sportswear", "label": "Sportswear", "description": "Réservé aux extensions v2." },
-    { "id": "nightwear", "label": "Nightwear", "description": "Réservé aux extensions v2." },
-    { "id": "accessories_ported", "label": "Accessoires portés", "description": "Réservé aux extensions v2." },
-    { "id": "footwear", "label": "Pieds", "description": "Chaussettes et futures pointures." }
+    {
+      "id": "tops",
+      "label": "Hauts",
+      "description": "Pièces portées sur le buste."
+    },
+    {
+      "id": "bottoms",
+      "label": "Bas",
+      "description": "Pièces portées sur bassin et jambes."
+    },
+    {
+      "id": "outerwear",
+      "label": "Outerwear",
+      "description": "Surcouches et vêtements de protection."
+    },
+    {
+      "id": "underwear",
+      "label": "Sous-vêtements",
+      "description": "Première couche proche du corps."
+    },
+    {
+      "id": "sportswear",
+      "label": "Sportswear",
+      "description": "Réservé aux extensions v2."
+    },
+    {
+      "id": "nightwear",
+      "label": "Nightwear",
+      "description": "Réservé aux extensions v2."
+    },
+    {
+      "id": "accessories_ported",
+      "label": "Accessoires portés",
+      "description": "Réservé aux extensions v2."
+    },
+    {
+      "id": "footwear",
+      "label": "Pieds",
+      "description": "Chaussettes et futures pointures."
+    }
   ],
   "categories": [
     {
@@ -23,19 +55,48 @@
       "legacyCategory": "tshirts",
       "family": "tops",
       "label": "T-shirt",
-      "subcategories": ["crew_neck", "v_neck", "long_sleeve"],
-      "requiredBodyMeasurements": ["chestCm", "stomachCm", "heightCm"],
-      "requiredGuideMeasurements": ["chestCm", "stomachCm"],
+      "subcategories": [
+        "crew_neck",
+        "v_neck",
+        "long_sleeve"
+      ],
+      "requiredBodyMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "heightCm"
+      ],
+      "requiredGuideMeasurements": [
+        "chestCm",
+        "stomachCm"
+      ],
       "priorityDimensions": [
-        { "dimension": "chestCm", "weight": 0.5 },
-        { "dimension": "stomachCm", "weight": 0.3 },
-        { "dimension": "heightCm", "weight": 0.2 }
+        {
+          "dimension": "chestCm",
+          "weight": 0.5
+        },
+        {
+          "dimension": "stomachCm",
+          "weight": 0.3
+        },
+        {
+          "dimension": "heightCm",
+          "weight": 0.2
+        }
       ],
       "easeProfile": "top_light_knit",
       "defaultCut": "regular",
       "defaultMaterialProfile": "cotton_jersey_medium",
-      "usageConstraints": ["single_layer", "skin_or_base_layer"],
-      "expectedEngineOutput": ["recommended_size", "alternatives", "confidence", "dimension_breakdown", "warnings"]
+      "usageConstraints": [
+        "single_layer",
+        "skin_or_base_layer"
+      ],
+      "expectedEngineOutput": [
+        "recommended_size",
+        "alternatives",
+        "confidence",
+        "dimension_breakdown",
+        "warnings"
+      ]
     },
     {
       "id": "polo",
@@ -43,19 +104,49 @@
       "legacyCategory": "tshirts",
       "family": "tops",
       "label": "Polo",
-      "subcategories": ["classic", "pique", "performance"],
-      "requiredBodyMeasurements": ["chestCm", "stomachCm", "bicepsCm"],
-      "requiredGuideMeasurements": ["chestCm", "stomachCm", "bicepsCm"],
+      "subcategories": [
+        "classic",
+        "pique",
+        "performance"
+      ],
+      "requiredBodyMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "bicepsCm"
+      ],
+      "requiredGuideMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "bicepsCm"
+      ],
       "priorityDimensions": [
-        { "dimension": "chestCm", "weight": 0.48 },
-        { "dimension": "stomachCm", "weight": 0.32 },
-        { "dimension": "bicepsCm", "weight": 0.2 }
+        {
+          "dimension": "chestCm",
+          "weight": 0.48
+        },
+        {
+          "dimension": "stomachCm",
+          "weight": 0.32
+        },
+        {
+          "dimension": "bicepsCm",
+          "weight": 0.2
+        }
       ],
       "easeProfile": "top_structured_knit",
       "defaultCut": "regular",
       "defaultMaterialProfile": "pique_cotton_medium",
-      "usageConstraints": ["single_layer", "collar_fit_not_inferred"],
-      "expectedEngineOutput": ["recommended_size", "alternatives", "confidence", "dimension_breakdown", "warnings"]
+      "usageConstraints": [
+        "single_layer",
+        "collar_fit_not_inferred"
+      ],
+      "expectedEngineOutput": [
+        "recommended_size",
+        "alternatives",
+        "confidence",
+        "dimension_breakdown",
+        "warnings"
+      ]
     },
     {
       "id": "chemise",
@@ -63,19 +154,51 @@
       "legacyCategory": "shirts",
       "family": "tops",
       "label": "Chemise",
-      "subcategories": ["casual", "dress", "overshirt"],
-      "requiredBodyMeasurements": ["chestCm", "stomachCm", "bicepsCm"],
-      "requiredGuideMeasurements": ["chestCm", "stomachCm", "bicepsCm", "neckCm", "sleeveLengthCm"],
+      "subcategories": [
+        "casual",
+        "dress",
+        "overshirt"
+      ],
+      "requiredBodyMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "bicepsCm"
+      ],
+      "requiredGuideMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "bicepsCm",
+        "neckCm",
+        "sleeveLengthCm"
+      ],
       "priorityDimensions": [
-        { "dimension": "chestCm", "weight": 0.48 },
-        { "dimension": "stomachCm", "weight": 0.32 },
-        { "dimension": "bicepsCm", "weight": 0.2 }
+        {
+          "dimension": "chestCm",
+          "weight": 0.48
+        },
+        {
+          "dimension": "stomachCm",
+          "weight": 0.32
+        },
+        {
+          "dimension": "bicepsCm",
+          "weight": 0.2
+        }
       ],
       "easeProfile": "top_woven_low_stretch",
       "defaultCut": "regular",
       "defaultMaterialProfile": "woven_cotton_low",
-      "usageConstraints": ["single_layer", "neck_and_sleeve_require_source"],
-      "expectedEngineOutput": ["recommended_size", "alternatives", "confidence", "dimension_breakdown", "warnings"]
+      "usageConstraints": [
+        "single_layer",
+        "neck_and_sleeve_require_source"
+      ],
+      "expectedEngineOutput": [
+        "recommended_size",
+        "alternatives",
+        "confidence",
+        "dimension_breakdown",
+        "warnings"
+      ]
     },
     {
       "id": "pull",
@@ -83,19 +206,49 @@
       "legacyCategory": "sweaters",
       "family": "tops",
       "label": "Pull",
-      "subcategories": ["crew_neck", "v_neck", "cardigan"],
-      "requiredBodyMeasurements": ["chestCm", "stomachCm", "bicepsCm"],
-      "requiredGuideMeasurements": ["chestCm", "stomachCm", "bicepsCm"],
+      "subcategories": [
+        "crew_neck",
+        "v_neck",
+        "cardigan"
+      ],
+      "requiredBodyMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "bicepsCm"
+      ],
+      "requiredGuideMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "bicepsCm"
+      ],
       "priorityDimensions": [
-        { "dimension": "chestCm", "weight": 0.48 },
-        { "dimension": "stomachCm", "weight": 0.32 },
-        { "dimension": "bicepsCm", "weight": 0.2 }
+        {
+          "dimension": "chestCm",
+          "weight": 0.48
+        },
+        {
+          "dimension": "stomachCm",
+          "weight": 0.32
+        },
+        {
+          "dimension": "bicepsCm",
+          "weight": 0.2
+        }
       ],
       "easeProfile": "top_mid_layer_knit",
       "defaultCut": "regular",
       "defaultMaterialProfile": "wool_blend_medium",
-      "usageConstraints": ["over_layer", "shrinkage_sensitive"],
-      "expectedEngineOutput": ["recommended_size", "alternatives", "confidence", "dimension_breakdown", "warnings"]
+      "usageConstraints": [
+        "over_layer",
+        "shrinkage_sensitive"
+      ],
+      "expectedEngineOutput": [
+        "recommended_size",
+        "alternatives",
+        "confidence",
+        "dimension_breakdown",
+        "warnings"
+      ]
     },
     {
       "id": "hoodie",
@@ -103,19 +256,49 @@
       "legacyCategory": "hoodies",
       "family": "tops",
       "label": "Hoodie",
-      "subcategories": ["pullover", "zip", "oversize"],
-      "requiredBodyMeasurements": ["chestCm", "stomachCm", "bicepsCm"],
-      "requiredGuideMeasurements": ["chestCm", "stomachCm", "bicepsCm"],
+      "subcategories": [
+        "pullover",
+        "zip",
+        "oversize"
+      ],
+      "requiredBodyMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "bicepsCm"
+      ],
+      "requiredGuideMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "bicepsCm"
+      ],
       "priorityDimensions": [
-        { "dimension": "chestCm", "weight": 0.46 },
-        { "dimension": "stomachCm", "weight": 0.34 },
-        { "dimension": "bicepsCm", "weight": 0.2 }
+        {
+          "dimension": "chestCm",
+          "weight": 0.46
+        },
+        {
+          "dimension": "stomachCm",
+          "weight": 0.34
+        },
+        {
+          "dimension": "bicepsCm",
+          "weight": 0.2
+        }
       ],
       "easeProfile": "top_relaxed_fleece",
       "defaultCut": "relaxed",
       "defaultMaterialProfile": "cotton_fleece_medium",
-      "usageConstraints": ["over_layer", "oversize_preference_sensitive"],
-      "expectedEngineOutput": ["recommended_size", "alternatives", "confidence", "dimension_breakdown", "warnings"]
+      "usageConstraints": [
+        "over_layer",
+        "oversize_preference_sensitive"
+      ],
+      "expectedEngineOutput": [
+        "recommended_size",
+        "alternatives",
+        "confidence",
+        "dimension_breakdown",
+        "warnings"
+      ]
     },
     {
       "id": "veste_legere",
@@ -123,19 +306,50 @@
       "legacyCategory": "jackets",
       "family": "outerwear",
       "label": "Veste légère",
-      "subcategories": ["bomber", "coach", "overshirt_jacket"],
-      "requiredBodyMeasurements": ["chestCm", "stomachCm", "bicepsCm"],
-      "requiredGuideMeasurements": ["chestCm", "stomachCm", "bicepsCm", "shoulderCm"],
+      "subcategories": [
+        "bomber",
+        "coach",
+        "overshirt_jacket"
+      ],
+      "requiredBodyMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "bicepsCm"
+      ],
+      "requiredGuideMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "bicepsCm",
+        "shoulderCm"
+      ],
       "priorityDimensions": [
-        { "dimension": "chestCm", "weight": 0.55 },
-        { "dimension": "stomachCm", "weight": 0.25 },
-        { "dimension": "bicepsCm", "weight": 0.2 }
+        {
+          "dimension": "chestCm",
+          "weight": 0.55
+        },
+        {
+          "dimension": "stomachCm",
+          "weight": 0.25
+        },
+        {
+          "dimension": "bicepsCm",
+          "weight": 0.2
+        }
       ],
       "easeProfile": "outerwear_light",
       "defaultCut": "regular",
       "defaultMaterialProfile": "woven_shell_low",
-      "usageConstraints": ["over_layer", "shoulder_requires_source"],
-      "expectedEngineOutput": ["recommended_size", "alternatives", "confidence", "dimension_breakdown", "warnings"]
+      "usageConstraints": [
+        "over_layer",
+        "shoulder_requires_source"
+      ],
+      "expectedEngineOutput": [
+        "recommended_size",
+        "alternatives",
+        "confidence",
+        "dimension_breakdown",
+        "warnings"
+      ]
     },
     {
       "id": "manteau",
@@ -143,19 +357,50 @@
       "legacyCategory": "coats",
       "family": "outerwear",
       "label": "Manteau",
-      "subcategories": ["overcoat", "car_coat", "duffle"],
-      "requiredBodyMeasurements": ["chestCm", "stomachCm", "bicepsCm"],
-      "requiredGuideMeasurements": ["chestCm", "stomachCm", "bicepsCm", "shoulderCm"],
+      "subcategories": [
+        "overcoat",
+        "car_coat",
+        "duffle"
+      ],
+      "requiredBodyMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "bicepsCm"
+      ],
+      "requiredGuideMeasurements": [
+        "chestCm",
+        "stomachCm",
+        "bicepsCm",
+        "shoulderCm"
+      ],
       "priorityDimensions": [
-        { "dimension": "chestCm", "weight": 0.55 },
-        { "dimension": "stomachCm", "weight": 0.25 },
-        { "dimension": "bicepsCm", "weight": 0.2 }
+        {
+          "dimension": "chestCm",
+          "weight": 0.55
+        },
+        {
+          "dimension": "stomachCm",
+          "weight": 0.25
+        },
+        {
+          "dimension": "bicepsCm",
+          "weight": 0.2
+        }
       ],
       "easeProfile": "outerwear_winter",
       "defaultCut": "regular",
       "defaultMaterialProfile": "wool_coat_none",
-      "usageConstraints": ["winter_layering", "avoid_too_tight"],
-      "expectedEngineOutput": ["recommended_size", "alternatives", "confidence", "dimension_breakdown", "warnings"]
+      "usageConstraints": [
+        "winter_layering",
+        "avoid_too_tight"
+      ],
+      "expectedEngineOutput": [
+        "recommended_size",
+        "alternatives",
+        "confidence",
+        "dimension_breakdown",
+        "warnings"
+      ]
     },
     {
       "id": "jean",
@@ -163,19 +408,51 @@
       "legacyCategory": "jeans",
       "family": "bottoms",
       "label": "Jean",
-      "subcategories": ["slim", "straight", "relaxed", "tapered"],
-      "requiredBodyMeasurements": ["waistCm", "seatHipsCm", "thighCm"],
-      "requiredGuideMeasurements": ["waistCm", "seatHipsCm", "thighCm", "inseamCm"],
+      "subcategories": [
+        "slim",
+        "straight",
+        "relaxed",
+        "tapered"
+      ],
+      "requiredBodyMeasurements": [
+        "waistCm",
+        "seatHipsCm",
+        "thighCm"
+      ],
+      "requiredGuideMeasurements": [
+        "waistCm",
+        "seatHipsCm",
+        "thighCm",
+        "inseamCm"
+      ],
       "priorityDimensions": [
-        { "dimension": "waistCm", "weight": 0.42 },
-        { "dimension": "seatHipsCm", "weight": 0.36 },
-        { "dimension": "thighCm", "weight": 0.22 }
+        {
+          "dimension": "waistCm",
+          "weight": 0.42
+        },
+        {
+          "dimension": "seatHipsCm",
+          "weight": 0.36
+        },
+        {
+          "dimension": "thighCm",
+          "weight": 0.22
+        }
       ],
       "easeProfile": "bottom_denim",
       "defaultCut": "regular",
       "defaultMaterialProfile": "denim_low",
-      "usageConstraints": ["single_layer", "inseam_requires_source"],
-      "expectedEngineOutput": ["recommended_size", "alternatives", "confidence", "dimension_breakdown", "warnings"]
+      "usageConstraints": [
+        "single_layer",
+        "inseam_requires_source"
+      ],
+      "expectedEngineOutput": [
+        "recommended_size",
+        "alternatives",
+        "confidence",
+        "dimension_breakdown",
+        "warnings"
+      ]
     },
     {
       "id": "pantalon",
@@ -183,19 +460,50 @@
       "legacyCategory": "trousers",
       "family": "bottoms",
       "label": "Pantalon",
-      "subcategories": ["dress", "casual", "pleated"],
-      "requiredBodyMeasurements": ["waistCm", "seatHipsCm", "thighCm"],
-      "requiredGuideMeasurements": ["waistCm", "seatHipsCm", "thighCm", "inseamCm"],
+      "subcategories": [
+        "dress",
+        "casual",
+        "pleated"
+      ],
+      "requiredBodyMeasurements": [
+        "waistCm",
+        "seatHipsCm",
+        "thighCm"
+      ],
+      "requiredGuideMeasurements": [
+        "waistCm",
+        "seatHipsCm",
+        "thighCm",
+        "inseamCm"
+      ],
       "priorityDimensions": [
-        { "dimension": "waistCm", "weight": 0.42 },
-        { "dimension": "seatHipsCm", "weight": 0.36 },
-        { "dimension": "thighCm", "weight": 0.22 }
+        {
+          "dimension": "waistCm",
+          "weight": 0.42
+        },
+        {
+          "dimension": "seatHipsCm",
+          "weight": 0.36
+        },
+        {
+          "dimension": "thighCm",
+          "weight": 0.22
+        }
       ],
       "easeProfile": "bottom_woven",
       "defaultCut": "regular",
       "defaultMaterialProfile": "woven_cotton_low",
-      "usageConstraints": ["single_layer", "inseam_requires_source"],
-      "expectedEngineOutput": ["recommended_size", "alternatives", "confidence", "dimension_breakdown", "warnings"]
+      "usageConstraints": [
+        "single_layer",
+        "inseam_requires_source"
+      ],
+      "expectedEngineOutput": [
+        "recommended_size",
+        "alternatives",
+        "confidence",
+        "dimension_breakdown",
+        "warnings"
+      ]
     },
     {
       "id": "short",
@@ -203,19 +511,49 @@
       "legacyCategory": "shorts",
       "family": "bottoms",
       "label": "Short",
-      "subcategories": ["casual", "bermuda", "sport"],
-      "requiredBodyMeasurements": ["waistCm", "seatHipsCm", "thighCm"],
-      "requiredGuideMeasurements": ["waistCm", "seatHipsCm", "thighCm"],
+      "subcategories": [
+        "casual",
+        "bermuda",
+        "sport"
+      ],
+      "requiredBodyMeasurements": [
+        "waistCm",
+        "seatHipsCm",
+        "thighCm"
+      ],
+      "requiredGuideMeasurements": [
+        "waistCm",
+        "seatHipsCm",
+        "thighCm"
+      ],
       "priorityDimensions": [
-        { "dimension": "waistCm", "weight": 0.43 },
-        { "dimension": "seatHipsCm", "weight": 0.34 },
-        { "dimension": "thighCm", "weight": 0.23 }
+        {
+          "dimension": "waistCm",
+          "weight": 0.43
+        },
+        {
+          "dimension": "seatHipsCm",
+          "weight": 0.34
+        },
+        {
+          "dimension": "thighCm",
+          "weight": 0.23
+        }
       ],
       "easeProfile": "bottom_short",
       "defaultCut": "regular",
       "defaultMaterialProfile": "woven_cotton_medium",
-      "usageConstraints": ["single_layer", "opening_thigh_sensitive"],
-      "expectedEngineOutput": ["recommended_size", "alternatives", "confidence", "dimension_breakdown", "warnings"]
+      "usageConstraints": [
+        "single_layer",
+        "opening_thigh_sensitive"
+      ],
+      "expectedEngineOutput": [
+        "recommended_size",
+        "alternatives",
+        "confidence",
+        "dimension_breakdown",
+        "warnings"
+      ]
     },
     {
       "id": "boxer",
@@ -223,19 +561,49 @@
       "legacyCategory": "boxers_or_underwear",
       "family": "underwear",
       "label": "Boxer",
-      "subcategories": ["trunk", "brief_boxer", "long_leg"],
-      "requiredBodyMeasurements": ["waistCm", "seatHipsCm", "thighCm"],
-      "requiredGuideMeasurements": ["waistCm", "seatHipsCm", "thighCm"],
+      "subcategories": [
+        "trunk",
+        "brief_boxer",
+        "long_leg"
+      ],
+      "requiredBodyMeasurements": [
+        "waistCm",
+        "seatHipsCm",
+        "thighCm"
+      ],
+      "requiredGuideMeasurements": [
+        "waistCm",
+        "seatHipsCm",
+        "thighCm"
+      ],
       "priorityDimensions": [
-        { "dimension": "waistCm", "weight": 0.38 },
-        { "dimension": "seatHipsCm", "weight": 0.34 },
-        { "dimension": "thighCm", "weight": 0.28 }
+        {
+          "dimension": "waistCm",
+          "weight": 0.38
+        },
+        {
+          "dimension": "seatHipsCm",
+          "weight": 0.34
+        },
+        {
+          "dimension": "thighCm",
+          "weight": 0.28
+        }
       ],
       "easeProfile": "underwear_stretch",
       "defaultCut": "close",
       "defaultMaterialProfile": "elastane_underwear_high",
-      "usageConstraints": ["base_layer", "compression_preference_sensitive"],
-      "expectedEngineOutput": ["recommended_size", "alternatives", "confidence", "dimension_breakdown", "warnings"]
+      "usageConstraints": [
+        "base_layer",
+        "compression_preference_sensitive"
+      ],
+      "expectedEngineOutput": [
+        "recommended_size",
+        "alternatives",
+        "confidence",
+        "dimension_breakdown",
+        "warnings"
+      ]
     },
     {
       "id": "slip",
@@ -243,19 +611,1988 @@
       "legacyCategory": "boxers_or_underwear",
       "family": "underwear",
       "label": "Slip",
-      "subcategories": ["classic", "low_rise", "sport"],
-      "requiredBodyMeasurements": ["waistCm", "seatHipsCm", "thighCm"],
-      "requiredGuideMeasurements": ["waistCm", "seatHipsCm"],
+      "subcategories": [
+        "classic",
+        "low_rise",
+        "sport"
+      ],
+      "requiredBodyMeasurements": [
+        "waistCm",
+        "seatHipsCm",
+        "thighCm"
+      ],
+      "requiredGuideMeasurements": [
+        "waistCm",
+        "seatHipsCm"
+      ],
       "priorityDimensions": [
-        { "dimension": "waistCm", "weight": 0.48 },
-        { "dimension": "seatHipsCm", "weight": 0.4 },
-        { "dimension": "thighCm", "weight": 0.12 }
+        {
+          "dimension": "waistCm",
+          "weight": 0.48
+        },
+        {
+          "dimension": "seatHipsCm",
+          "weight": 0.4
+        },
+        {
+          "dimension": "thighCm",
+          "weight": 0.12
+        }
       ],
       "easeProfile": "underwear_stretch_close",
       "defaultCut": "close",
       "defaultMaterialProfile": "elastane_underwear_high",
-      "usageConstraints": ["base_layer", "compression_preference_sensitive"],
-      "expectedEngineOutput": ["recommended_size", "alternatives", "confidence", "dimension_breakdown", "warnings"]
+      "usageConstraints": [
+        "base_layer",
+        "compression_preference_sensitive"
+      ],
+      "expectedEngineOutput": [
+        "recommended_size",
+        "alternatives",
+        "confidence",
+        "dimension_breakdown",
+        "warnings"
+      ]
+    }
+  ],
+  "garmentMeasurementsCatalog": [
+    {
+      "category_id": "tshirt",
+      "measurement_id": "garment_chest_circumference",
+      "label_fr": "chest circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "chestCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "tshirt",
+      "measurement_id": "garment_stomach_circumference",
+      "label_fr": "stomach circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "stomachCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "tshirt",
+      "measurement_id": "garment_shoulder_width",
+      "label_fr": "shoulder width",
+      "unit": "cm",
+      "axis": "width",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "shoulderCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "tshirt",
+      "measurement_id": "garment_body_length",
+      "label_fr": "body length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "backLengthCm",
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "tshirt",
+      "measurement_id": "garment_sleeve_length",
+      "label_fr": "sleeve length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "sleeveLengthCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "tshirt",
+      "measurement_id": "garment_biceps_opening",
+      "label_fr": "biceps opening",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "bicepsCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "polo",
+      "measurement_id": "garment_chest_circumference",
+      "label_fr": "chest circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "chestCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "polo",
+      "measurement_id": "garment_stomach_circumference",
+      "label_fr": "stomach circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "stomachCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "polo",
+      "measurement_id": "garment_shoulder_width",
+      "label_fr": "shoulder width",
+      "unit": "cm",
+      "axis": "width",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "shoulderCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "polo",
+      "measurement_id": "garment_body_length",
+      "label_fr": "body length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "backLengthCm",
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "polo",
+      "measurement_id": "garment_sleeve_length",
+      "label_fr": "sleeve length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "sleeveLengthCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "polo",
+      "measurement_id": "garment_biceps_opening",
+      "label_fr": "biceps opening",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "bicepsCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "chemise",
+      "measurement_id": "garment_chest_circumference",
+      "label_fr": "chest circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "chestCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "chemise",
+      "measurement_id": "garment_stomach_circumference",
+      "label_fr": "stomach circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "stomachCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "chemise",
+      "measurement_id": "garment_neck_circumference",
+      "label_fr": "neck circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "neckCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "chemise",
+      "measurement_id": "garment_shoulder_width",
+      "label_fr": "shoulder width",
+      "unit": "cm",
+      "axis": "width",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "shoulderCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "chemise",
+      "measurement_id": "garment_sleeve_length",
+      "label_fr": "sleeve length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "sleeveLengthCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "chemise",
+      "measurement_id": "garment_cuff_circumference",
+      "label_fr": "cuff circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "forearmCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "chemise",
+      "measurement_id": "garment_back_length",
+      "label_fr": "back length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "backLengthCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "pull",
+      "measurement_id": "garment_chest_circumference",
+      "label_fr": "chest circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "chestCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": true
+    },
+    {
+      "category_id": "pull",
+      "measurement_id": "garment_stomach_circumference",
+      "label_fr": "stomach circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "stomachCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": true
+    },
+    {
+      "category_id": "pull",
+      "measurement_id": "garment_shoulder_width",
+      "label_fr": "shoulder width",
+      "unit": "cm",
+      "axis": "width",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "shoulderCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "pull",
+      "measurement_id": "garment_body_length",
+      "label_fr": "body length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "backLengthCm",
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "pull",
+      "measurement_id": "garment_sleeve_length",
+      "label_fr": "sleeve length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "sleeveLengthCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "pull",
+      "measurement_id": "garment_biceps_opening",
+      "label_fr": "biceps opening",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "bicepsCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": true
+    },
+    {
+      "category_id": "hoodie",
+      "measurement_id": "garment_chest_circumference",
+      "label_fr": "chest circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "chestCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": true
+    },
+    {
+      "category_id": "hoodie",
+      "measurement_id": "garment_stomach_circumference",
+      "label_fr": "stomach circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "stomachCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": true
+    },
+    {
+      "category_id": "hoodie",
+      "measurement_id": "garment_shoulder_width",
+      "label_fr": "shoulder width",
+      "unit": "cm",
+      "axis": "width",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "shoulderCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "hoodie",
+      "measurement_id": "garment_body_length",
+      "label_fr": "body length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "backLengthCm",
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "hoodie",
+      "measurement_id": "garment_sleeve_length",
+      "label_fr": "sleeve length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "sleeveLengthCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "hoodie",
+      "measurement_id": "garment_biceps_opening",
+      "label_fr": "biceps opening",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "bicepsCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": true
+    },
+    {
+      "category_id": "veste_legere",
+      "measurement_id": "garment_chest_circumference",
+      "label_fr": "chest circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "chestCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": true
+    },
+    {
+      "category_id": "veste_legere",
+      "measurement_id": "garment_stomach_circumference",
+      "label_fr": "stomach circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "stomachCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": true
+    },
+    {
+      "category_id": "veste_legere",
+      "measurement_id": "garment_shoulder_width",
+      "label_fr": "shoulder width",
+      "unit": "cm",
+      "axis": "width",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "shoulderCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "veste_legere",
+      "measurement_id": "garment_body_length",
+      "label_fr": "body length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "backLengthCm",
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "veste_legere",
+      "measurement_id": "garment_sleeve_length",
+      "label_fr": "sleeve length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "sleeveLengthCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "veste_legere",
+      "measurement_id": "garment_biceps_opening",
+      "label_fr": "biceps opening",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "bicepsCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": true
+    },
+    {
+      "category_id": "manteau",
+      "measurement_id": "garment_chest_circumference",
+      "label_fr": "chest circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "chestCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": true
+    },
+    {
+      "category_id": "manteau",
+      "measurement_id": "garment_stomach_circumference",
+      "label_fr": "stomach circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "stomachCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": true
+    },
+    {
+      "category_id": "manteau",
+      "measurement_id": "garment_shoulder_width",
+      "label_fr": "shoulder width",
+      "unit": "cm",
+      "axis": "width",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "shoulderCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "manteau",
+      "measurement_id": "garment_body_length",
+      "label_fr": "body length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "backLengthCm",
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "manteau",
+      "measurement_id": "garment_sleeve_length",
+      "label_fr": "sleeve length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "sleeveLengthCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "manteau",
+      "measurement_id": "garment_biceps_opening",
+      "label_fr": "biceps opening",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "bicepsCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": true
+    },
+    {
+      "category_id": "jean",
+      "measurement_id": "garment_waist_circumference",
+      "label_fr": "waist circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "waistCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "jean",
+      "measurement_id": "garment_seat_circumference",
+      "label_fr": "seat circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "seatHipsCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "jean",
+      "measurement_id": "garment_thigh_circumference",
+      "label_fr": "thigh circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "thighCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "jean",
+      "measurement_id": "garment_knee_circumference",
+      "label_fr": "knee circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "calfCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "jean",
+      "measurement_id": "garment_leg_opening",
+      "label_fr": "leg opening",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "calfCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "jean",
+      "measurement_id": "garment_front_rise",
+      "label_fr": "front rise",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "jean",
+      "measurement_id": "garment_back_rise",
+      "label_fr": "back rise",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "jean",
+      "measurement_id": "garment_inseam_length",
+      "label_fr": "inseam length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "inseamCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "pantalon",
+      "measurement_id": "garment_waist_circumference",
+      "label_fr": "waist circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "waistCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "pantalon",
+      "measurement_id": "garment_seat_circumference",
+      "label_fr": "seat circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "seatHipsCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "pantalon",
+      "measurement_id": "garment_thigh_circumference",
+      "label_fr": "thigh circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "thighCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "pantalon",
+      "measurement_id": "garment_knee_circumference",
+      "label_fr": "knee circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "calfCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "pantalon",
+      "measurement_id": "garment_leg_opening",
+      "label_fr": "leg opening",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "calfCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "pantalon",
+      "measurement_id": "garment_front_rise",
+      "label_fr": "front rise",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "pantalon",
+      "measurement_id": "garment_back_rise",
+      "label_fr": "back rise",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "pantalon",
+      "measurement_id": "garment_inseam_length",
+      "label_fr": "inseam length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "inseamCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "short",
+      "measurement_id": "garment_waist_circumference",
+      "label_fr": "waist circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "waistCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "short",
+      "measurement_id": "garment_seat_circumference",
+      "label_fr": "seat circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "seatHipsCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "short",
+      "measurement_id": "garment_thigh_circumference",
+      "label_fr": "thigh circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "thighCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "short",
+      "measurement_id": "garment_thigh_opening",
+      "label_fr": "thigh opening",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "thighCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "short",
+      "measurement_id": "garment_front_rise",
+      "label_fr": "front rise",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "short",
+      "measurement_id": "garment_back_rise",
+      "label_fr": "back rise",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "short",
+      "measurement_id": "garment_side_length",
+      "label_fr": "side length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "boxer",
+      "measurement_id": "garment_waist_circumference",
+      "label_fr": "waist circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "waistCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "boxer",
+      "measurement_id": "garment_seat_circumference",
+      "label_fr": "seat circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "seatHipsCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "boxer",
+      "measurement_id": "garment_thigh_opening",
+      "label_fr": "thigh opening",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "thighCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "boxer",
+      "measurement_id": "garment_side_length",
+      "label_fr": "side length",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "slip",
+      "measurement_id": "garment_waist_circumference",
+      "label_fr": "waist circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "waistCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "slip",
+      "measurement_id": "garment_seat_circumference",
+      "label_fr": "seat circumference",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": true,
+      "linked_body_measurements": [
+        "seatHipsCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "slip",
+      "measurement_id": "garment_leg_opening",
+      "label_fr": "leg opening",
+      "unit": "cm",
+      "axis": "circumference",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "circumference",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "calfCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    },
+    {
+      "category_id": "slip",
+      "measurement_id": "garment_front_rise",
+      "label_fr": "front rise",
+      "unit": "cm",
+      "axis": "length",
+      "measurement_method": "mesure à plat normalisée interne; conversion en circonférence selon catégorie si nécessaire",
+      "flat_or_circumference": "flat",
+      "critical_for_fit": false,
+      "linked_body_measurements": [
+        "heightCm"
+      ],
+      "affected_by_cut_modifiers": true,
+      "affected_by_material_modifiers": true,
+      "affected_by_layering": false
+    }
+  ],
+  "categoryMeasurementPriorityDetails": [
+    {
+      "category_id": "tshirt",
+      "primary_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference"
+      ],
+      "secondary_measurements": [
+        "garment_shoulder_width",
+        "garment_body_length"
+      ],
+      "tie_breaker_measurements": [
+        "garment_sleeve_length",
+        "garment_biceps_opening"
+      ],
+      "fit_critical_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference",
+        "garment_shoulder_width"
+      ],
+      "confidence_penalty_if_missing": {
+        "primary": 18,
+        "secondary": 10,
+        "tie_breaker": 5
+      }
+    },
+    {
+      "category_id": "polo",
+      "primary_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference"
+      ],
+      "secondary_measurements": [
+        "garment_shoulder_width",
+        "garment_body_length"
+      ],
+      "tie_breaker_measurements": [
+        "garment_sleeve_length",
+        "garment_biceps_opening"
+      ],
+      "fit_critical_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference",
+        "garment_shoulder_width"
+      ],
+      "confidence_penalty_if_missing": {
+        "primary": 18,
+        "secondary": 10,
+        "tie_breaker": 5
+      }
+    },
+    {
+      "category_id": "chemise",
+      "primary_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference"
+      ],
+      "secondary_measurements": [
+        "garment_neck_circumference",
+        "garment_shoulder_width"
+      ],
+      "tie_breaker_measurements": [
+        "garment_sleeve_length",
+        "garment_cuff_circumference",
+        "garment_back_length"
+      ],
+      "fit_critical_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference",
+        "garment_neck_circumference"
+      ],
+      "confidence_penalty_if_missing": {
+        "primary": 18,
+        "secondary": 10,
+        "tie_breaker": 5
+      }
+    },
+    {
+      "category_id": "pull",
+      "primary_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference"
+      ],
+      "secondary_measurements": [
+        "garment_shoulder_width",
+        "garment_body_length"
+      ],
+      "tie_breaker_measurements": [
+        "garment_sleeve_length",
+        "garment_biceps_opening"
+      ],
+      "fit_critical_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference",
+        "garment_shoulder_width"
+      ],
+      "confidence_penalty_if_missing": {
+        "primary": 18,
+        "secondary": 10,
+        "tie_breaker": 5
+      }
+    },
+    {
+      "category_id": "hoodie",
+      "primary_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference"
+      ],
+      "secondary_measurements": [
+        "garment_shoulder_width",
+        "garment_body_length"
+      ],
+      "tie_breaker_measurements": [
+        "garment_sleeve_length",
+        "garment_biceps_opening"
+      ],
+      "fit_critical_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference",
+        "garment_shoulder_width"
+      ],
+      "confidence_penalty_if_missing": {
+        "primary": 18,
+        "secondary": 10,
+        "tie_breaker": 5
+      }
+    },
+    {
+      "category_id": "veste_legere",
+      "primary_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference"
+      ],
+      "secondary_measurements": [
+        "garment_shoulder_width",
+        "garment_body_length"
+      ],
+      "tie_breaker_measurements": [
+        "garment_sleeve_length",
+        "garment_biceps_opening"
+      ],
+      "fit_critical_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference",
+        "garment_shoulder_width"
+      ],
+      "confidence_penalty_if_missing": {
+        "primary": 18,
+        "secondary": 10,
+        "tie_breaker": 5
+      }
+    },
+    {
+      "category_id": "manteau",
+      "primary_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference"
+      ],
+      "secondary_measurements": [
+        "garment_shoulder_width",
+        "garment_body_length"
+      ],
+      "tie_breaker_measurements": [
+        "garment_sleeve_length",
+        "garment_biceps_opening"
+      ],
+      "fit_critical_measurements": [
+        "garment_chest_circumference",
+        "garment_stomach_circumference",
+        "garment_shoulder_width"
+      ],
+      "confidence_penalty_if_missing": {
+        "primary": 18,
+        "secondary": 10,
+        "tie_breaker": 5
+      }
+    },
+    {
+      "category_id": "jean",
+      "primary_measurements": [
+        "garment_waist_circumference",
+        "garment_seat_circumference"
+      ],
+      "secondary_measurements": [
+        "garment_thigh_circumference",
+        "garment_knee_circumference"
+      ],
+      "tie_breaker_measurements": [
+        "garment_leg_opening",
+        "garment_front_rise",
+        "garment_back_rise",
+        "garment_inseam_length"
+      ],
+      "fit_critical_measurements": [
+        "garment_waist_circumference",
+        "garment_seat_circumference",
+        "garment_thigh_circumference"
+      ],
+      "confidence_penalty_if_missing": {
+        "primary": 18,
+        "secondary": 10,
+        "tie_breaker": 5
+      }
+    },
+    {
+      "category_id": "pantalon",
+      "primary_measurements": [
+        "garment_waist_circumference",
+        "garment_seat_circumference"
+      ],
+      "secondary_measurements": [
+        "garment_thigh_circumference",
+        "garment_knee_circumference"
+      ],
+      "tie_breaker_measurements": [
+        "garment_leg_opening",
+        "garment_front_rise",
+        "garment_back_rise",
+        "garment_inseam_length"
+      ],
+      "fit_critical_measurements": [
+        "garment_waist_circumference",
+        "garment_seat_circumference",
+        "garment_thigh_circumference"
+      ],
+      "confidence_penalty_if_missing": {
+        "primary": 18,
+        "secondary": 10,
+        "tie_breaker": 5
+      }
+    },
+    {
+      "category_id": "short",
+      "primary_measurements": [
+        "garment_waist_circumference",
+        "garment_seat_circumference"
+      ],
+      "secondary_measurements": [
+        "garment_thigh_circumference",
+        "garment_thigh_opening"
+      ],
+      "tie_breaker_measurements": [
+        "garment_front_rise",
+        "garment_back_rise",
+        "garment_side_length"
+      ],
+      "fit_critical_measurements": [
+        "garment_waist_circumference",
+        "garment_seat_circumference",
+        "garment_thigh_circumference"
+      ],
+      "confidence_penalty_if_missing": {
+        "primary": 18,
+        "secondary": 10,
+        "tie_breaker": 5
+      }
+    },
+    {
+      "category_id": "boxer",
+      "primary_measurements": [
+        "garment_waist_circumference",
+        "garment_seat_circumference"
+      ],
+      "secondary_measurements": [
+        "garment_thigh_opening",
+        "garment_side_length"
+      ],
+      "tie_breaker_measurements": [],
+      "fit_critical_measurements": [
+        "garment_waist_circumference",
+        "garment_seat_circumference",
+        "garment_thigh_opening"
+      ],
+      "confidence_penalty_if_missing": {
+        "primary": 18,
+        "secondary": 10,
+        "tie_breaker": 5
+      }
+    },
+    {
+      "category_id": "slip",
+      "primary_measurements": [
+        "garment_waist_circumference",
+        "garment_seat_circumference"
+      ],
+      "secondary_measurements": [
+        "garment_leg_opening",
+        "garment_front_rise"
+      ],
+      "tie_breaker_measurements": [],
+      "fit_critical_measurements": [
+        "garment_waist_circumference",
+        "garment_seat_circumference",
+        "garment_leg_opening"
+      ],
+      "confidence_penalty_if_missing": {
+        "primary": 18,
+        "secondary": 10,
+        "tie_breaker": 5
+      }
+    }
+  ],
+  "transformationRules": [
+    {
+      "category_id": "tshirt",
+      "garment_measurement_id": "garment_chest_circumference",
+      "formula": "chestCm + ease(chestCm, cut_id, category_id) + material_adjustment(chestCm, material_id) + layering_adjustment(chestCm, layering_rule_id)",
+      "depends_on": [
+        "chestCm",
+        "cut_id",
+        "category_id",
+        "material_id",
+        "layering_rule_id"
+      ],
+      "assumptions": "Hypothèse: si chestCm manquant, fallback sur guide row target.",
+      "notes": "Règle symbolique interne, non normative."
+    },
+    {
+      "category_id": "tshirt",
+      "garment_measurement_id": "garment_body_length",
+      "formula": "(backLengthCm || height_proxy(heightCm)) + style_adjustment(length_pref_id) + cut_length_delta(cut_id, category_id)",
+      "depends_on": [
+        "backLengthCm",
+        "heightCm",
+        "length_pref_id",
+        "cut_id"
+      ],
+      "assumptions": "Hypothèse: proxy hauteur utilisé quand backLengthCm absent.",
+      "notes": "Déclarer incertitude additionnelle si proxy utilisé."
+    },
+    {
+      "category_id": "polo",
+      "garment_measurement_id": "garment_chest_circumference",
+      "formula": "chestCm + ease(chestCm, cut_id, category_id) + material_adjustment(chestCm, material_id) + layering_adjustment(chestCm, layering_rule_id)",
+      "depends_on": [
+        "chestCm",
+        "cut_id",
+        "category_id",
+        "material_id",
+        "layering_rule_id"
+      ],
+      "assumptions": "Hypothèse: si chestCm manquant, fallback sur guide row target.",
+      "notes": "Règle symbolique interne, non normative."
+    },
+    {
+      "category_id": "polo",
+      "garment_measurement_id": "garment_body_length",
+      "formula": "(backLengthCm || height_proxy(heightCm)) + style_adjustment(length_pref_id) + cut_length_delta(cut_id, category_id)",
+      "depends_on": [
+        "backLengthCm",
+        "heightCm",
+        "length_pref_id",
+        "cut_id"
+      ],
+      "assumptions": "Hypothèse: proxy hauteur utilisé quand backLengthCm absent.",
+      "notes": "Déclarer incertitude additionnelle si proxy utilisé."
+    },
+    {
+      "category_id": "chemise",
+      "garment_measurement_id": "garment_chest_circumference",
+      "formula": "chestCm + ease(chestCm, cut_id, category_id) + material_adjustment(chestCm, material_id) + layering_adjustment(chestCm, layering_rule_id)",
+      "depends_on": [
+        "chestCm",
+        "cut_id",
+        "category_id",
+        "material_id",
+        "layering_rule_id"
+      ],
+      "assumptions": "Hypothèse: si chestCm manquant, fallback sur guide row target.",
+      "notes": "Règle symbolique interne, non normative."
+    },
+    {
+      "category_id": "chemise",
+      "garment_measurement_id": "garment_body_length",
+      "formula": "(backLengthCm || height_proxy(heightCm)) + style_adjustment(length_pref_id) + cut_length_delta(cut_id, category_id)",
+      "depends_on": [
+        "backLengthCm",
+        "heightCm",
+        "length_pref_id",
+        "cut_id"
+      ],
+      "assumptions": "Hypothèse: proxy hauteur utilisé quand backLengthCm absent.",
+      "notes": "Déclarer incertitude additionnelle si proxy utilisé."
+    },
+    {
+      "category_id": "pull",
+      "garment_measurement_id": "garment_chest_circumference",
+      "formula": "chestCm + ease(chestCm, cut_id, category_id) + material_adjustment(chestCm, material_id) + layering_adjustment(chestCm, layering_rule_id)",
+      "depends_on": [
+        "chestCm",
+        "cut_id",
+        "category_id",
+        "material_id",
+        "layering_rule_id"
+      ],
+      "assumptions": "Hypothèse: si chestCm manquant, fallback sur guide row target.",
+      "notes": "Règle symbolique interne, non normative."
+    },
+    {
+      "category_id": "pull",
+      "garment_measurement_id": "garment_body_length",
+      "formula": "(backLengthCm || height_proxy(heightCm)) + style_adjustment(length_pref_id) + cut_length_delta(cut_id, category_id)",
+      "depends_on": [
+        "backLengthCm",
+        "heightCm",
+        "length_pref_id",
+        "cut_id"
+      ],
+      "assumptions": "Hypothèse: proxy hauteur utilisé quand backLengthCm absent.",
+      "notes": "Déclarer incertitude additionnelle si proxy utilisé."
+    },
+    {
+      "category_id": "hoodie",
+      "garment_measurement_id": "garment_chest_circumference",
+      "formula": "chestCm + ease(chestCm, cut_id, category_id) + material_adjustment(chestCm, material_id) + layering_adjustment(chestCm, layering_rule_id)",
+      "depends_on": [
+        "chestCm",
+        "cut_id",
+        "category_id",
+        "material_id",
+        "layering_rule_id"
+      ],
+      "assumptions": "Hypothèse: si chestCm manquant, fallback sur guide row target.",
+      "notes": "Règle symbolique interne, non normative."
+    },
+    {
+      "category_id": "hoodie",
+      "garment_measurement_id": "garment_body_length",
+      "formula": "(backLengthCm || height_proxy(heightCm)) + style_adjustment(length_pref_id) + cut_length_delta(cut_id, category_id)",
+      "depends_on": [
+        "backLengthCm",
+        "heightCm",
+        "length_pref_id",
+        "cut_id"
+      ],
+      "assumptions": "Hypothèse: proxy hauteur utilisé quand backLengthCm absent.",
+      "notes": "Déclarer incertitude additionnelle si proxy utilisé."
+    },
+    {
+      "category_id": "veste_legere",
+      "garment_measurement_id": "garment_chest_circumference",
+      "formula": "chestCm + ease(chestCm, cut_id, category_id) + material_adjustment(chestCm, material_id) + layering_adjustment(chestCm, layering_rule_id)",
+      "depends_on": [
+        "chestCm",
+        "cut_id",
+        "category_id",
+        "material_id",
+        "layering_rule_id"
+      ],
+      "assumptions": "Hypothèse: si chestCm manquant, fallback sur guide row target.",
+      "notes": "Règle symbolique interne, non normative."
+    },
+    {
+      "category_id": "veste_legere",
+      "garment_measurement_id": "garment_body_length",
+      "formula": "(backLengthCm || height_proxy(heightCm)) + style_adjustment(length_pref_id) + cut_length_delta(cut_id, category_id)",
+      "depends_on": [
+        "backLengthCm",
+        "heightCm",
+        "length_pref_id",
+        "cut_id"
+      ],
+      "assumptions": "Hypothèse: proxy hauteur utilisé quand backLengthCm absent.",
+      "notes": "Déclarer incertitude additionnelle si proxy utilisé."
+    },
+    {
+      "category_id": "manteau",
+      "garment_measurement_id": "garment_chest_circumference",
+      "formula": "chestCm + ease(chestCm, cut_id, category_id) + material_adjustment(chestCm, material_id) + layering_adjustment(chestCm, layering_rule_id)",
+      "depends_on": [
+        "chestCm",
+        "cut_id",
+        "category_id",
+        "material_id",
+        "layering_rule_id"
+      ],
+      "assumptions": "Hypothèse: si chestCm manquant, fallback sur guide row target.",
+      "notes": "Règle symbolique interne, non normative."
+    },
+    {
+      "category_id": "manteau",
+      "garment_measurement_id": "garment_body_length",
+      "formula": "(backLengthCm || height_proxy(heightCm)) + style_adjustment(length_pref_id) + cut_length_delta(cut_id, category_id)",
+      "depends_on": [
+        "backLengthCm",
+        "heightCm",
+        "length_pref_id",
+        "cut_id"
+      ],
+      "assumptions": "Hypothèse: proxy hauteur utilisé quand backLengthCm absent.",
+      "notes": "Déclarer incertitude additionnelle si proxy utilisé."
+    },
+    {
+      "category_id": "jean",
+      "garment_measurement_id": "garment_waist_circumference",
+      "formula": "waistCm + ease(waistCm, cut_id, category_id) + material_adjustment(waistCm, material_id)",
+      "depends_on": [
+        "waistCm",
+        "cut_id",
+        "category_id",
+        "material_id"
+      ],
+      "assumptions": "Hypothèse: si asymétrie ventre/taille, waistCm prioritaire pour bas.",
+      "notes": "Appliquer penalty confiance si waistCm absent."
+    },
+    {
+      "category_id": "jean",
+      "garment_measurement_id": "garment_inseam_length",
+      "formula": "(inseamCm || inseam_proxy(heightCm)) + hem_adjustment(style_pref_id)",
+      "depends_on": [
+        "inseamCm",
+        "heightCm",
+        "style_pref_id"
+      ],
+      "assumptions": "Hypothèse: proxy longueur jambe dérivé de la stature.",
+      "notes": "Short utilise side_length au lieu d inseam long."
+    },
+    {
+      "category_id": "pantalon",
+      "garment_measurement_id": "garment_waist_circumference",
+      "formula": "waistCm + ease(waistCm, cut_id, category_id) + material_adjustment(waistCm, material_id)",
+      "depends_on": [
+        "waistCm",
+        "cut_id",
+        "category_id",
+        "material_id"
+      ],
+      "assumptions": "Hypothèse: si asymétrie ventre/taille, waistCm prioritaire pour bas.",
+      "notes": "Appliquer penalty confiance si waistCm absent."
+    },
+    {
+      "category_id": "pantalon",
+      "garment_measurement_id": "garment_inseam_length",
+      "formula": "(inseamCm || inseam_proxy(heightCm)) + hem_adjustment(style_pref_id)",
+      "depends_on": [
+        "inseamCm",
+        "heightCm",
+        "style_pref_id"
+      ],
+      "assumptions": "Hypothèse: proxy longueur jambe dérivé de la stature.",
+      "notes": "Short utilise side_length au lieu d inseam long."
+    },
+    {
+      "category_id": "short",
+      "garment_measurement_id": "garment_waist_circumference",
+      "formula": "waistCm + ease(waistCm, cut_id, category_id) + material_adjustment(waistCm, material_id)",
+      "depends_on": [
+        "waistCm",
+        "cut_id",
+        "category_id",
+        "material_id"
+      ],
+      "assumptions": "Hypothèse: si asymétrie ventre/taille, waistCm prioritaire pour bas.",
+      "notes": "Appliquer penalty confiance si waistCm absent."
+    },
+    {
+      "category_id": "short",
+      "garment_measurement_id": "garment_side_length",
+      "formula": "(inseamCm || inseam_proxy(heightCm)) + hem_adjustment(style_pref_id)",
+      "depends_on": [
+        "inseamCm",
+        "heightCm",
+        "style_pref_id"
+      ],
+      "assumptions": "Hypothèse: proxy longueur jambe dérivé de la stature.",
+      "notes": "Short utilise side_length au lieu d inseam long."
+    },
+    {
+      "category_id": "boxer",
+      "garment_measurement_id": "garment_seat_circumference",
+      "formula": "seatHipsCm + ease(seatHipsCm, cut_id, category_id) - compression_adjustment(material_id, style_pref_id)",
+      "depends_on": [
+        "seatHipsCm",
+        "cut_id",
+        "category_id",
+        "material_id",
+        "style_pref_id"
+      ],
+      "assumptions": "Hypothèse: sous-vêtements autorisent ease négative contrôlée.",
+      "notes": "Ne pas interpréter comme standard médical de compression."
+    },
+    {
+      "category_id": "boxer",
+      "garment_measurement_id": "garment_waist_circumference",
+      "formula": "waistCm + ease(waistCm, cut_id, category_id) - waistband_tension(material_id)",
+      "depends_on": [
+        "waistCm",
+        "cut_id",
+        "material_id"
+      ],
+      "assumptions": "Hypothèse: ceinture élastique compense jusqu'à 1.5 cm.",
+      "notes": "Ajouter avertissement si préférence very_fitted + forte compression."
+    },
+    {
+      "category_id": "slip",
+      "garment_measurement_id": "garment_seat_circumference",
+      "formula": "seatHipsCm + ease(seatHipsCm, cut_id, category_id) - compression_adjustment(material_id, style_pref_id)",
+      "depends_on": [
+        "seatHipsCm",
+        "cut_id",
+        "category_id",
+        "material_id",
+        "style_pref_id"
+      ],
+      "assumptions": "Hypothèse: sous-vêtements autorisent ease négative contrôlée.",
+      "notes": "Ne pas interpréter comme standard médical de compression."
+    },
+    {
+      "category_id": "slip",
+      "garment_measurement_id": "garment_waist_circumference",
+      "formula": "waistCm + ease(waistCm, cut_id, category_id) - waistband_tension(material_id)",
+      "depends_on": [
+        "waistCm",
+        "cut_id",
+        "material_id"
+      ],
+      "assumptions": "Hypothèse: ceinture élastique compense jusqu'à 1.5 cm.",
+      "notes": "Ajouter avertissement si préférence very_fitted + forte compression."
+    }
+  ],
+  "layeringRules": [
+    {
+      "id": "layer_tshirt_pull",
+      "base_category": "tshirt",
+      "outer_category": "pull",
+      "extra_ease_by_measurement_id": {
+        "chestCm": 2,
+        "stomachCm": 1.5,
+        "bicepsCm": 1
+      },
+      "notes": "Superposition légère maille sur base layer."
+    },
+    {
+      "id": "layer_chemise_pull",
+      "base_category": "chemise",
+      "outer_category": "pull",
+      "extra_ease_by_measurement_id": {
+        "chestCm": 2.5,
+        "stomachCm": 2,
+        "bicepsCm": 1.2
+      },
+      "notes": "Prendre en compte col et patte de boutonnage."
+    },
+    {
+      "id": "layer_tshirt_hoodie",
+      "base_category": "tshirt",
+      "outer_category": "hoodie",
+      "extra_ease_by_measurement_id": {
+        "chestCm": 3,
+        "stomachCm": 2.5,
+        "bicepsCm": 1.5
+      },
+      "notes": "Hoodie prévu pour base jersey."
+    },
+    {
+      "id": "layer_pull_veste_legere",
+      "base_category": "pull",
+      "outer_category": "veste_legere",
+      "extra_ease_by_measurement_id": {
+        "chestCm": 3.5,
+        "stomachCm": 3,
+        "bicepsCm": 2
+      },
+      "notes": "Veste légère sur mid-layer."
+    },
+    {
+      "id": "layer_pull_manteau",
+      "base_category": "pull",
+      "outer_category": "manteau",
+      "extra_ease_by_measurement_id": {
+        "chestCm": 5,
+        "stomachCm": 4,
+        "bicepsCm": 2.5
+      },
+      "notes": "Manteau hivernal avec sous-couche maille."
+    }
+  ],
+  "stylePreferenceModifiers": [
+    {
+      "id": "pref_very_fitted",
+      "label_fr": "Très ajusté",
+      "impact_on_measurements": {
+        "chestCm": -2,
+        "stomachCm": -2,
+        "waistCm": -1.5,
+        "seatHipsCm": -1.5
+      },
+      "notes": "Réduit l'aisance; risque de compression accru."
+    },
+    {
+      "id": "pref_fitted",
+      "label_fr": "Ajusté",
+      "impact_on_measurements": {
+        "chestCm": -1,
+        "stomachCm": -1,
+        "waistCm": -0.8,
+        "seatHipsCm": -0.8
+      },
+      "notes": "Ajusté sans compression forte."
+    },
+    {
+      "id": "pref_regular",
+      "label_fr": "Regular",
+      "impact_on_measurements": {},
+      "notes": "Neutre."
+    },
+    {
+      "id": "pref_relaxed",
+      "label_fr": "Confort",
+      "impact_on_measurements": {
+        "chestCm": 1.5,
+        "stomachCm": 1.5,
+        "waistCm": 1,
+        "seatHipsCm": 1
+      },
+      "notes": "Confort quotidien."
+    },
+    {
+      "id": "pref_oversized",
+      "label_fr": "Oversized",
+      "impact_on_measurements": {
+        "chestCm": 3.5,
+        "stomachCm": 3,
+        "waistCm": 2.5,
+        "seatHipsCm": 2.5,
+        "backLengthCm": 1.5
+      },
+      "notes": "Volume intentionnel mode."
+    },
+    {
+      "id": "pref_short_length",
+      "label_fr": "Longueur courte",
+      "impact_on_measurements": {
+        "backLengthCm": -2,
+        "inseamCm": -1.5
+      },
+      "notes": "Préférence ourlet plus haut."
+    },
+    {
+      "id": "pref_long_length",
+      "label_fr": "Longueur longue",
+      "impact_on_measurements": {
+        "backLengthCm": 2,
+        "inseamCm": 1.5
+      },
+      "notes": "Préférence couvrante."
     }
   ]
 }

@@ -104,6 +104,33 @@ export function validateOntologyIntegration(): OntologyDiagnostic[] {
     }
   }
 
+  for (const categoryId of menswearV1CategoryIds) {
+    if (!ontologyBundle.garments.garmentMeasurementsCatalog.some((entry) => entry.category_id === categoryId)) {
+      diagnostics.push({
+        severity: "error",
+        code: "missing_garment_measurement_catalog",
+        entityId: categoryId,
+        message: `La catégorie ${categoryId} n'a pas de catalogue de mesures vêtement.`
+      });
+    }
+    if (!ontologyBundle.garments.categoryMeasurementPriorityDetails.some((entry) => entry.category_id === categoryId)) {
+      diagnostics.push({
+        severity: "warning",
+        code: "missing_priority_details",
+        entityId: categoryId,
+        message: `La catégorie ${categoryId} n'a pas de priorité de mesures détaillée.`
+      });
+    }
+    if (!ontologyBundle.garments.transformationRules.some((entry) => entry.category_id === categoryId)) {
+      diagnostics.push({
+        severity: "warning",
+        code: "missing_transformation_rules",
+        entityId: categoryId,
+        message: `La catégorie ${categoryId} n'a pas de règles symboliques corps -> vêtement.`
+      });
+    }
+  }
+
   if (diagnostics.length === 0) {
     diagnostics.push({
       severity: "info",
