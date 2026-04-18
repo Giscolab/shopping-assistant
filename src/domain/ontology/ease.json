@@ -1,17 +1,1971 @@
 {
   "version": "menswear-v1",
   "profiles": [
-    { "id": "top_light_knit", "label": "Haut maille léger", "defaultEaseCm": { "chestCm": 6, "stomachCm": 5 }, "notes": "T-shirt et pièces proches." },
-    { "id": "top_structured_knit", "label": "Maille structurée", "defaultEaseCm": { "chestCm": 6, "stomachCm": 5, "bicepsCm": 3 }, "notes": "Polo et maille piquée." },
-    { "id": "top_woven_low_stretch", "label": "Haut tissé faible stretch", "defaultEaseCm": { "chestCm": 8, "stomachCm": 7, "bicepsCm": 4 }, "notes": "Chemise et overshirt." },
-    { "id": "top_mid_layer_knit", "label": "Maille de surcouche", "defaultEaseCm": { "chestCm": 9, "stomachCm": 8, "bicepsCm": 5 }, "notes": "Pull et cardigan." },
-    { "id": "top_relaxed_fleece", "label": "Fleece relax", "defaultEaseCm": { "chestCm": 10, "stomachCm": 9, "bicepsCm": 5 }, "notes": "Hoodie." },
-    { "id": "outerwear_light", "label": "Outerwear léger", "defaultEaseCm": { "chestCm": 12, "stomachCm": 10, "bicepsCm": 6 }, "notes": "Veste légère." },
-    { "id": "outerwear_winter", "label": "Outerwear hiver", "defaultEaseCm": { "chestCm": 16, "stomachCm": 14, "bicepsCm": 8 }, "notes": "Manteau, parka, doudoune." },
-    { "id": "bottom_denim", "label": "Denim", "defaultEaseCm": { "waistCm": 1, "seatHipsCm": 2, "thighCm": 2 }, "notes": "Jean." },
-    { "id": "bottom_woven", "label": "Bas tissé", "defaultEaseCm": { "waistCm": 2, "seatHipsCm": 3, "thighCm": 3 }, "notes": "Pantalon, chino." },
-    { "id": "bottom_short", "label": "Short", "defaultEaseCm": { "waistCm": 2, "seatHipsCm": 3, "thighCm": 3 }, "notes": "Short et bermuda." },
-    { "id": "underwear_stretch", "label": "Sous-vêtement stretch", "defaultEaseCm": { "waistCm": 0, "seatHipsCm": 0, "thighCm": 0 }, "notes": "Boxer." },
-    { "id": "underwear_stretch_close", "label": "Sous-vêtement stretch proche", "defaultEaseCm": { "waistCm": 0, "seatHipsCm": 0, "thighCm": 0 }, "notes": "Slip." }
+    {
+      "id": "top_light_knit",
+      "label": "Haut maille léger",
+      "defaultEaseCm": {
+        "chestCm": 6,
+        "stomachCm": 5
+      },
+      "notes": "T-shirt et pièces proches."
+    },
+    {
+      "id": "top_structured_knit",
+      "label": "Maille structurée",
+      "defaultEaseCm": {
+        "chestCm": 6,
+        "stomachCm": 5,
+        "bicepsCm": 3
+      },
+      "notes": "Polo et maille piquée."
+    },
+    {
+      "id": "top_woven_low_stretch",
+      "label": "Haut tissé faible stretch",
+      "defaultEaseCm": {
+        "chestCm": 8,
+        "stomachCm": 7,
+        "bicepsCm": 4
+      },
+      "notes": "Chemise et overshirt."
+    },
+    {
+      "id": "top_mid_layer_knit",
+      "label": "Maille de surcouche",
+      "defaultEaseCm": {
+        "chestCm": 9,
+        "stomachCm": 8,
+        "bicepsCm": 5
+      },
+      "notes": "Pull et cardigan."
+    },
+    {
+      "id": "top_relaxed_fleece",
+      "label": "Fleece relax",
+      "defaultEaseCm": {
+        "chestCm": 10,
+        "stomachCm": 9,
+        "bicepsCm": 5
+      },
+      "notes": "Hoodie."
+    },
+    {
+      "id": "outerwear_light",
+      "label": "Outerwear léger",
+      "defaultEaseCm": {
+        "chestCm": 12,
+        "stomachCm": 10,
+        "bicepsCm": 6
+      },
+      "notes": "Veste légère."
+    },
+    {
+      "id": "outerwear_winter",
+      "label": "Outerwear hiver",
+      "defaultEaseCm": {
+        "chestCm": 16,
+        "stomachCm": 14,
+        "bicepsCm": 8
+      },
+      "notes": "Manteau, parka, doudoune."
+    },
+    {
+      "id": "bottom_denim",
+      "label": "Denim",
+      "defaultEaseCm": {
+        "waistCm": 1,
+        "seatHipsCm": 2,
+        "thighCm": 2
+      },
+      "notes": "Jean."
+    },
+    {
+      "id": "bottom_woven",
+      "label": "Bas tissé",
+      "defaultEaseCm": {
+        "waistCm": 2,
+        "seatHipsCm": 3,
+        "thighCm": 3
+      },
+      "notes": "Pantalon, chino."
+    },
+    {
+      "id": "bottom_short",
+      "label": "Short",
+      "defaultEaseCm": {
+        "waistCm": 2,
+        "seatHipsCm": 3,
+        "thighCm": 3
+      },
+      "notes": "Short et bermuda."
+    },
+    {
+      "id": "underwear_stretch",
+      "label": "Sous-vêtement stretch",
+      "defaultEaseCm": {
+        "waistCm": 0,
+        "seatHipsCm": 0,
+        "thighCm": 0
+      },
+      "notes": "Boxer."
+    },
+    {
+      "id": "underwear_stretch_close",
+      "label": "Sous-vêtement stretch proche",
+      "defaultEaseCm": {
+        "waistCm": 0,
+        "seatHipsCm": 0,
+        "thighCm": 0
+      },
+      "notes": "Slip."
+    }
+  ],
+  "cutSpecificEaseRules": [
+    {
+      "category_id": "tshirt",
+      "cut_id": "close",
+      "measurement_id": "chestCm",
+      "ease_value": 3,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "close",
+      "measurement_id": "stomachCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "close",
+      "measurement_id": "bicepsCm",
+      "ease_value": 0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "slim",
+      "measurement_id": "chestCm",
+      "ease_value": 4.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "slim",
+      "measurement_id": "stomachCm",
+      "ease_value": 3.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "slim",
+      "measurement_id": "bicepsCm",
+      "ease_value": 1.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "regular",
+      "measurement_id": "chestCm",
+      "ease_value": 6,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "regular",
+      "measurement_id": "stomachCm",
+      "ease_value": 5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "regular",
+      "measurement_id": "bicepsCm",
+      "ease_value": 3,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "relaxed",
+      "measurement_id": "chestCm",
+      "ease_value": 8.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "relaxed",
+      "measurement_id": "stomachCm",
+      "ease_value": 7.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "relaxed",
+      "measurement_id": "bicepsCm",
+      "ease_value": 5.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "oversize",
+      "measurement_id": "chestCm",
+      "ease_value": 11.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "oversize",
+      "measurement_id": "stomachCm",
+      "ease_value": 10.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "tshirt",
+      "cut_id": "oversize",
+      "measurement_id": "bicepsCm",
+      "ease_value": 8.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "close",
+      "measurement_id": "chestCm",
+      "ease_value": 3.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "close",
+      "measurement_id": "stomachCm",
+      "ease_value": 2.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "close",
+      "measurement_id": "bicepsCm",
+      "ease_value": 0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "slim",
+      "measurement_id": "chestCm",
+      "ease_value": 5.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "slim",
+      "measurement_id": "stomachCm",
+      "ease_value": 4.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "slim",
+      "measurement_id": "bicepsCm",
+      "ease_value": 2.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "regular",
+      "measurement_id": "chestCm",
+      "ease_value": 6.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "regular",
+      "measurement_id": "stomachCm",
+      "ease_value": 5.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "regular",
+      "measurement_id": "bicepsCm",
+      "ease_value": 3.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "relaxed",
+      "measurement_id": "chestCm",
+      "ease_value": 9.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "relaxed",
+      "measurement_id": "stomachCm",
+      "ease_value": 8.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "relaxed",
+      "measurement_id": "bicepsCm",
+      "ease_value": 6.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "oversize",
+      "measurement_id": "chestCm",
+      "ease_value": 12.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "oversize",
+      "measurement_id": "stomachCm",
+      "ease_value": 11.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "polo",
+      "cut_id": "oversize",
+      "measurement_id": "bicepsCm",
+      "ease_value": 9.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "close",
+      "measurement_id": "chestCm",
+      "ease_value": 4.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "close",
+      "measurement_id": "stomachCm",
+      "ease_value": 3.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "close",
+      "measurement_id": "bicepsCm",
+      "ease_value": 1.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "close",
+      "measurement_id": "neckCm",
+      "ease_value": -0.1,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "slim",
+      "measurement_id": "chestCm",
+      "ease_value": 6.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "slim",
+      "measurement_id": "stomachCm",
+      "ease_value": 5.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "slim",
+      "measurement_id": "bicepsCm",
+      "ease_value": 3.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "slim",
+      "measurement_id": "neckCm",
+      "ease_value": 0.4,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "regular",
+      "measurement_id": "chestCm",
+      "ease_value": 7.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "regular",
+      "measurement_id": "stomachCm",
+      "ease_value": 6.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "regular",
+      "measurement_id": "bicepsCm",
+      "ease_value": 4.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "regular",
+      "measurement_id": "neckCm",
+      "ease_value": 0.9,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "relaxed",
+      "measurement_id": "chestCm",
+      "ease_value": 10.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "relaxed",
+      "measurement_id": "stomachCm",
+      "ease_value": 9.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "relaxed",
+      "measurement_id": "bicepsCm",
+      "ease_value": 7.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "relaxed",
+      "measurement_id": "neckCm",
+      "ease_value": 1.7,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "oversize",
+      "measurement_id": "chestCm",
+      "ease_value": 13.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "oversize",
+      "measurement_id": "stomachCm",
+      "ease_value": 12.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "oversize",
+      "measurement_id": "bicepsCm",
+      "ease_value": 10.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "chemise",
+      "cut_id": "oversize",
+      "measurement_id": "neckCm",
+      "ease_value": 2.7,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "close",
+      "measurement_id": "chestCm",
+      "ease_value": 6,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "close",
+      "measurement_id": "stomachCm",
+      "ease_value": 5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "close",
+      "measurement_id": "bicepsCm",
+      "ease_value": 3,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "slim",
+      "measurement_id": "chestCm",
+      "ease_value": 7.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "slim",
+      "measurement_id": "stomachCm",
+      "ease_value": 6.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "slim",
+      "measurement_id": "bicepsCm",
+      "ease_value": 4.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "regular",
+      "measurement_id": "chestCm",
+      "ease_value": 9,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "regular",
+      "measurement_id": "stomachCm",
+      "ease_value": 8,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "regular",
+      "measurement_id": "bicepsCm",
+      "ease_value": 6,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "relaxed",
+      "measurement_id": "chestCm",
+      "ease_value": 11.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "relaxed",
+      "measurement_id": "stomachCm",
+      "ease_value": 10.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "relaxed",
+      "measurement_id": "bicepsCm",
+      "ease_value": 8.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "oversize",
+      "measurement_id": "chestCm",
+      "ease_value": 14.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "oversize",
+      "measurement_id": "stomachCm",
+      "ease_value": 13.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pull",
+      "cut_id": "oversize",
+      "measurement_id": "bicepsCm",
+      "ease_value": 11.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "close",
+      "measurement_id": "chestCm",
+      "ease_value": 7,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "close",
+      "measurement_id": "stomachCm",
+      "ease_value": 6,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "close",
+      "measurement_id": "bicepsCm",
+      "ease_value": 4,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "slim",
+      "measurement_id": "chestCm",
+      "ease_value": 8.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "slim",
+      "measurement_id": "stomachCm",
+      "ease_value": 7.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "slim",
+      "measurement_id": "bicepsCm",
+      "ease_value": 5.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "regular",
+      "measurement_id": "chestCm",
+      "ease_value": 10,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "regular",
+      "measurement_id": "stomachCm",
+      "ease_value": 9,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "regular",
+      "measurement_id": "bicepsCm",
+      "ease_value": 7,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "relaxed",
+      "measurement_id": "chestCm",
+      "ease_value": 12.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "relaxed",
+      "measurement_id": "stomachCm",
+      "ease_value": 11.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "relaxed",
+      "measurement_id": "bicepsCm",
+      "ease_value": 9.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "oversize",
+      "measurement_id": "chestCm",
+      "ease_value": 15.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "oversize",
+      "measurement_id": "stomachCm",
+      "ease_value": 14.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "hoodie",
+      "cut_id": "oversize",
+      "measurement_id": "bicepsCm",
+      "ease_value": 12.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "close",
+      "measurement_id": "chestCm",
+      "ease_value": 8.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "close",
+      "measurement_id": "stomachCm",
+      "ease_value": 7.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "close",
+      "measurement_id": "bicepsCm",
+      "ease_value": 5.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "close",
+      "measurement_id": "shoulderCm",
+      "ease_value": 1.1,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "slim",
+      "measurement_id": "chestCm",
+      "ease_value": 10.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "slim",
+      "measurement_id": "stomachCm",
+      "ease_value": 9.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "slim",
+      "measurement_id": "bicepsCm",
+      "ease_value": 7.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "slim",
+      "measurement_id": "shoulderCm",
+      "ease_value": 1.6,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "regular",
+      "measurement_id": "chestCm",
+      "ease_value": 11.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "regular",
+      "measurement_id": "stomachCm",
+      "ease_value": 10.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "regular",
+      "measurement_id": "bicepsCm",
+      "ease_value": 8.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "regular",
+      "measurement_id": "shoulderCm",
+      "ease_value": 2.1,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "relaxed",
+      "measurement_id": "chestCm",
+      "ease_value": 14.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "relaxed",
+      "measurement_id": "stomachCm",
+      "ease_value": 13.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "relaxed",
+      "measurement_id": "bicepsCm",
+      "ease_value": 11.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "relaxed",
+      "measurement_id": "shoulderCm",
+      "ease_value": 2.9,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "oversize",
+      "measurement_id": "chestCm",
+      "ease_value": 17.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "oversize",
+      "measurement_id": "stomachCm",
+      "ease_value": 16.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "oversize",
+      "measurement_id": "bicepsCm",
+      "ease_value": 14.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "veste_legere",
+      "cut_id": "oversize",
+      "measurement_id": "shoulderCm",
+      "ease_value": 3.9,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "close",
+      "measurement_id": "chestCm",
+      "ease_value": 12,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "close",
+      "measurement_id": "stomachCm",
+      "ease_value": 11,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "close",
+      "measurement_id": "bicepsCm",
+      "ease_value": 9,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "close",
+      "measurement_id": "shoulderCm",
+      "ease_value": 2.3,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "slim",
+      "measurement_id": "chestCm",
+      "ease_value": 13.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "slim",
+      "measurement_id": "stomachCm",
+      "ease_value": 12.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "slim",
+      "measurement_id": "bicepsCm",
+      "ease_value": 10.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "slim",
+      "measurement_id": "shoulderCm",
+      "ease_value": 2.8,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "regular",
+      "measurement_id": "chestCm",
+      "ease_value": 15,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "regular",
+      "measurement_id": "stomachCm",
+      "ease_value": 14,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "regular",
+      "measurement_id": "bicepsCm",
+      "ease_value": 12,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "regular",
+      "measurement_id": "shoulderCm",
+      "ease_value": 3.3,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "relaxed",
+      "measurement_id": "chestCm",
+      "ease_value": 17.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "relaxed",
+      "measurement_id": "stomachCm",
+      "ease_value": 16.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "relaxed",
+      "measurement_id": "bicepsCm",
+      "ease_value": 14.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "relaxed",
+      "measurement_id": "shoulderCm",
+      "ease_value": 4.1,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "oversize",
+      "measurement_id": "chestCm",
+      "ease_value": 20.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "oversize",
+      "measurement_id": "stomachCm",
+      "ease_value": 19.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "oversize",
+      "measurement_id": "bicepsCm",
+      "ease_value": 17.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "manteau",
+      "cut_id": "oversize",
+      "measurement_id": "shoulderCm",
+      "ease_value": 5.1,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "close",
+      "measurement_id": "waistCm",
+      "ease_value": -1.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "close",
+      "measurement_id": "seatHipsCm",
+      "ease_value": -0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "close",
+      "measurement_id": "thighCm",
+      "ease_value": -1.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "close",
+      "measurement_id": "calfCm",
+      "ease_value": -2.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "slim",
+      "measurement_id": "waistCm",
+      "ease_value": 0.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "slim",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 1.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "slim",
+      "measurement_id": "thighCm",
+      "ease_value": 0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "slim",
+      "measurement_id": "calfCm",
+      "ease_value": -0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "regular",
+      "measurement_id": "waistCm",
+      "ease_value": 1.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "regular",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 2.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "regular",
+      "measurement_id": "thighCm",
+      "ease_value": 2.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "regular",
+      "measurement_id": "calfCm",
+      "ease_value": 1.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "relaxed",
+      "measurement_id": "waistCm",
+      "ease_value": 4.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "relaxed",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 5.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "relaxed",
+      "measurement_id": "thighCm",
+      "ease_value": 4.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "relaxed",
+      "measurement_id": "calfCm",
+      "ease_value": 3.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "oversize",
+      "measurement_id": "waistCm",
+      "ease_value": 7.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "oversize",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 8.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "oversize",
+      "measurement_id": "thighCm",
+      "ease_value": 7.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "jean",
+      "cut_id": "oversize",
+      "measurement_id": "calfCm",
+      "ease_value": 6.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "close",
+      "measurement_id": "waistCm",
+      "ease_value": -0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "close",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "close",
+      "measurement_id": "thighCm",
+      "ease_value": 0.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "close",
+      "measurement_id": "calfCm",
+      "ease_value": -1.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "slim",
+      "measurement_id": "waistCm",
+      "ease_value": 1.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "slim",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 2.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "slim",
+      "measurement_id": "thighCm",
+      "ease_value": 1.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "slim",
+      "measurement_id": "calfCm",
+      "ease_value": 0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "regular",
+      "measurement_id": "waistCm",
+      "ease_value": 2.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "regular",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 3.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "regular",
+      "measurement_id": "thighCm",
+      "ease_value": 3.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "regular",
+      "measurement_id": "calfCm",
+      "ease_value": 2.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "relaxed",
+      "measurement_id": "waistCm",
+      "ease_value": 5.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "relaxed",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 6.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "relaxed",
+      "measurement_id": "thighCm",
+      "ease_value": 5.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "relaxed",
+      "measurement_id": "calfCm",
+      "ease_value": 4.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "oversize",
+      "measurement_id": "waistCm",
+      "ease_value": 8.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "oversize",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 9.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "oversize",
+      "measurement_id": "thighCm",
+      "ease_value": 8.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "pantalon",
+      "cut_id": "oversize",
+      "measurement_id": "calfCm",
+      "ease_value": 7.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "close",
+      "measurement_id": "waistCm",
+      "ease_value": -0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "close",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "close",
+      "measurement_id": "thighCm",
+      "ease_value": 0.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "slim",
+      "measurement_id": "waistCm",
+      "ease_value": 1.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "slim",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 2.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "slim",
+      "measurement_id": "thighCm",
+      "ease_value": 1.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "regular",
+      "measurement_id": "waistCm",
+      "ease_value": 2.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "regular",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 3.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "regular",
+      "measurement_id": "thighCm",
+      "ease_value": 3.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "relaxed",
+      "measurement_id": "waistCm",
+      "ease_value": 5.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "relaxed",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 6.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "relaxed",
+      "measurement_id": "thighCm",
+      "ease_value": 5.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "oversize",
+      "measurement_id": "waistCm",
+      "ease_value": 8.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "oversize",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 9.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "short",
+      "cut_id": "oversize",
+      "measurement_id": "thighCm",
+      "ease_value": 8.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "close",
+      "measurement_id": "waistCm",
+      "ease_value": -2.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "close",
+      "measurement_id": "seatHipsCm",
+      "ease_value": -1.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "close",
+      "measurement_id": "thighCm",
+      "ease_value": -2.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "slim",
+      "measurement_id": "waistCm",
+      "ease_value": -1.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "slim",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 0.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "slim",
+      "measurement_id": "thighCm",
+      "ease_value": -0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "regular",
+      "measurement_id": "waistCm",
+      "ease_value": 0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "regular",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 1.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "regular",
+      "measurement_id": "thighCm",
+      "ease_value": 1.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "relaxed",
+      "measurement_id": "waistCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "relaxed",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "relaxed",
+      "measurement_id": "thighCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "oversize",
+      "measurement_id": "waistCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "oversize",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "boxer",
+      "cut_id": "oversize",
+      "measurement_id": "thighCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "close",
+      "measurement_id": "waistCm",
+      "ease_value": -3,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "close",
+      "measurement_id": "seatHipsCm",
+      "ease_value": -2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "close",
+      "measurement_id": "thighCm",
+      "ease_value": -2.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "slim",
+      "measurement_id": "waistCm",
+      "ease_value": -1.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "slim",
+      "measurement_id": "seatHipsCm",
+      "ease_value": -0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "slim",
+      "measurement_id": "thighCm",
+      "ease_value": -1.0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "regular",
+      "measurement_id": "waistCm",
+      "ease_value": 0,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "regular",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 1,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "regular",
+      "measurement_id": "thighCm",
+      "ease_value": 0.5,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "relaxed",
+      "measurement_id": "waistCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "relaxed",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "relaxed",
+      "measurement_id": "thighCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "oversize",
+      "measurement_id": "waistCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "oversize",
+      "measurement_id": "seatHipsCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    },
+    {
+      "category_id": "slip",
+      "cut_id": "oversize",
+      "measurement_id": "thighCm",
+      "ease_value": 2,
+      "unit": "cm",
+      "applies_to": "garment_target",
+      "notes": "Hypothèse interne; à recaler avec guide marque si disponible."
+    }
   ]
 }

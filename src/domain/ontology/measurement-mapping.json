@@ -1,20 +1,509 @@
 {
   "version": "menswear-v1",
   "canonicalDimensions": [
-    { "id": "chestCm", "labelFr": "Poitrine", "bodyKeys": ["chestCm"], "guideAliases": ["chest", "poitrine", "tour de poitrine"] },
-    { "id": "stomachCm", "labelFr": "Ventre", "bodyKeys": ["stomachCm", "waistCm"], "guideAliases": ["stomach", "ventre", "abdomen"] },
-    { "id": "waistCm", "labelFr": "Taille", "bodyKeys": ["waistCm"], "guideAliases": ["waist", "taille", "tour de taille"] },
-    { "id": "seatHipsCm", "labelFr": "Hanches / bassin", "bodyKeys": ["seatHipsCm"], "guideAliases": ["hips", "seat", "hanches", "bassin", "fessiers"] },
-    { "id": "bicepsCm", "labelFr": "Biceps", "bodyKeys": ["leftBicepsCm", "rightBicepsCm"], "guideAliases": ["biceps", "upper arm", "bras"] },
-    { "id": "forearmCm", "labelFr": "Avant-bras", "bodyKeys": ["leftForearmCm", "rightForearmCm"], "guideAliases": ["forearm", "avant-bras"] },
-    { "id": "thighCm", "labelFr": "Cuisse", "bodyKeys": ["leftThighCm", "rightThighCm"], "guideAliases": ["thigh", "cuisse"] },
-    { "id": "calfCm", "labelFr": "Mollet", "bodyKeys": ["leftCalfCm", "rightCalfCm"], "guideAliases": ["calf", "mollet"] },
-    { "id": "heightCm", "labelFr": "Taille corporelle", "bodyKeys": ["heightCm"], "guideAliases": ["height", "stature", "taille corporelle"] },
-    { "id": "footLengthMm", "labelFr": "Longueur de pied", "bodyKeys": ["footLengthMm"], "guideAliases": ["foot length", "longueur de pied"] },
-    { "id": "shoulderCm", "labelFr": "Épaules", "bodyKeys": [], "guideAliases": ["shoulder", "épaules", "largeur épaules"], "requiresGuideOnly": true },
-    { "id": "neckCm", "labelFr": "Tour de cou", "bodyKeys": [], "guideAliases": ["neck", "tour de cou"], "requiresGuideOnly": true },
-    { "id": "sleeveLengthCm", "labelFr": "Longueur manche", "bodyKeys": [], "guideAliases": ["sleeve", "longueur manche"], "requiresGuideOnly": true },
-    { "id": "inseamCm", "labelFr": "Entrejambe", "bodyKeys": [], "guideAliases": ["inseam", "entrejambe"], "requiresGuideOnly": true },
-    { "id": "backLengthCm", "labelFr": "Longueur buste", "bodyKeys": [], "guideAliases": ["body length", "back length", "longueur buste"], "requiresGuideOnly": true }
+    {
+      "id": "chestCm",
+      "labelFr": "Poitrine",
+      "bodyKeys": [
+        "chestCm"
+      ],
+      "guideAliases": [
+        "chest",
+        "poitrine",
+        "tour de poitrine"
+      ]
+    },
+    {
+      "id": "stomachCm",
+      "labelFr": "Ventre",
+      "bodyKeys": [
+        "stomachCm",
+        "waistCm"
+      ],
+      "guideAliases": [
+        "stomach",
+        "ventre",
+        "abdomen"
+      ]
+    },
+    {
+      "id": "waistCm",
+      "labelFr": "Taille",
+      "bodyKeys": [
+        "waistCm"
+      ],
+      "guideAliases": [
+        "waist",
+        "taille",
+        "tour de taille"
+      ]
+    },
+    {
+      "id": "seatHipsCm",
+      "labelFr": "Hanches / bassin",
+      "bodyKeys": [
+        "seatHipsCm"
+      ],
+      "guideAliases": [
+        "hips",
+        "seat",
+        "hanches",
+        "bassin",
+        "fessiers"
+      ]
+    },
+    {
+      "id": "bicepsCm",
+      "labelFr": "Biceps",
+      "bodyKeys": [
+        "leftBicepsCm",
+        "rightBicepsCm"
+      ],
+      "guideAliases": [
+        "biceps",
+        "upper arm",
+        "bras"
+      ]
+    },
+    {
+      "id": "forearmCm",
+      "labelFr": "Avant-bras",
+      "bodyKeys": [
+        "leftForearmCm",
+        "rightForearmCm"
+      ],
+      "guideAliases": [
+        "forearm",
+        "avant-bras"
+      ]
+    },
+    {
+      "id": "thighCm",
+      "labelFr": "Cuisse",
+      "bodyKeys": [
+        "leftThighCm",
+        "rightThighCm"
+      ],
+      "guideAliases": [
+        "thigh",
+        "cuisse"
+      ]
+    },
+    {
+      "id": "calfCm",
+      "labelFr": "Mollet",
+      "bodyKeys": [
+        "leftCalfCm",
+        "rightCalfCm"
+      ],
+      "guideAliases": [
+        "calf",
+        "mollet"
+      ]
+    },
+    {
+      "id": "heightCm",
+      "labelFr": "Taille corporelle",
+      "bodyKeys": [
+        "heightCm"
+      ],
+      "guideAliases": [
+        "height",
+        "stature",
+        "taille corporelle"
+      ]
+    },
+    {
+      "id": "footLengthMm",
+      "labelFr": "Longueur de pied",
+      "bodyKeys": [
+        "footLengthMm"
+      ],
+      "guideAliases": [
+        "foot length",
+        "longueur de pied"
+      ]
+    },
+    {
+      "id": "shoulderCm",
+      "labelFr": "Épaules",
+      "bodyKeys": [],
+      "guideAliases": [
+        "shoulder",
+        "épaules",
+        "largeur épaules"
+      ],
+      "requiresGuideOnly": true
+    },
+    {
+      "id": "neckCm",
+      "labelFr": "Tour de cou",
+      "bodyKeys": [],
+      "guideAliases": [
+        "neck",
+        "tour de cou"
+      ],
+      "requiresGuideOnly": true
+    },
+    {
+      "id": "sleeveLengthCm",
+      "labelFr": "Longueur manche",
+      "bodyKeys": [],
+      "guideAliases": [
+        "sleeve",
+        "longueur manche"
+      ],
+      "requiresGuideOnly": true
+    },
+    {
+      "id": "inseamCm",
+      "labelFr": "Entrejambe",
+      "bodyKeys": [],
+      "guideAliases": [
+        "inseam",
+        "entrejambe"
+      ],
+      "requiresGuideOnly": true
+    },
+    {
+      "id": "backLengthCm",
+      "labelFr": "Longueur buste",
+      "bodyKeys": [],
+      "guideAliases": [
+        "body length",
+        "back length",
+        "longueur buste"
+      ],
+      "requiresGuideOnly": true
+    }
+  ],
+  "bodyMeasurementsCatalog": [
+    {
+      "id": "chestCm",
+      "label_fr": "Tour de poitrine",
+      "unit": "cm",
+      "body_zone": "torse",
+      "description": "Tour horizontal de poitrine au point le plus fort.",
+      "measurement_method": "ruban horizontal, respiration normale",
+      "measurement_orientation": "circumference_horizontal",
+      "is_circumference": true,
+      "is_length": false,
+      "required_for_categories": [
+        "tshirt",
+        "polo",
+        "chemise",
+        "pull",
+        "hoodie",
+        "veste_legere",
+        "manteau"
+      ],
+      "optional_for_categories": [],
+      "capture_priority": "high"
+    },
+    {
+      "id": "stomachCm",
+      "label_fr": "Tour de ventre",
+      "unit": "cm",
+      "body_zone": "torse",
+      "description": "Tour du ventre au point de projection maximal.",
+      "measurement_method": "ruban horizontal sans compression",
+      "measurement_orientation": "circumference_horizontal",
+      "is_circumference": true,
+      "is_length": false,
+      "required_for_categories": [
+        "tshirt",
+        "polo",
+        "chemise",
+        "pull",
+        "hoodie",
+        "veste_legere",
+        "manteau"
+      ],
+      "optional_for_categories": [],
+      "capture_priority": "high"
+    },
+    {
+      "id": "waistCm",
+      "label_fr": "Tour de taille",
+      "unit": "cm",
+      "body_zone": "taille",
+      "description": "Tour de taille anatomique utilisé pour les bas.",
+      "measurement_method": "ruban au creux naturel de taille",
+      "measurement_orientation": "circumference_horizontal",
+      "is_circumference": true,
+      "is_length": false,
+      "required_for_categories": [
+        "jean",
+        "pantalon",
+        "short",
+        "boxer",
+        "slip"
+      ],
+      "optional_for_categories": [
+        "tshirt"
+      ],
+      "capture_priority": "high"
+    },
+    {
+      "id": "seatHipsCm",
+      "label_fr": "Tour bassin/fessier",
+      "unit": "cm",
+      "body_zone": "bassin",
+      "description": "Tour le plus fort bassin/fessier assis-debout neutre.",
+      "measurement_method": "ruban horizontal au point le plus large",
+      "measurement_orientation": "circumference_horizontal",
+      "is_circumference": true,
+      "is_length": false,
+      "required_for_categories": [
+        "jean",
+        "pantalon",
+        "short",
+        "boxer",
+        "slip"
+      ],
+      "optional_for_categories": [],
+      "capture_priority": "high"
+    },
+    {
+      "id": "bicepsCm",
+      "label_fr": "Tour de biceps",
+      "unit": "cm",
+      "body_zone": "bras",
+      "description": "Tour du haut de bras au repos.",
+      "measurement_method": "mesure bilatérale gauche/droite puis consolidation",
+      "measurement_orientation": "circumference_horizontal",
+      "is_circumference": true,
+      "is_length": false,
+      "required_for_categories": [
+        "polo",
+        "chemise",
+        "pull",
+        "hoodie",
+        "veste_legere",
+        "manteau"
+      ],
+      "optional_for_categories": [
+        "tshirt"
+      ],
+      "capture_priority": "medium"
+    },
+    {
+      "id": "forearmCm",
+      "label_fr": "Tour d'avant-bras",
+      "unit": "cm",
+      "body_zone": "bras",
+      "description": "Tour de l'avant-bras au point fort.",
+      "measurement_method": "mesure bilatérale gauche/droite puis consolidation",
+      "measurement_orientation": "circumference_horizontal",
+      "is_circumference": true,
+      "is_length": false,
+      "required_for_categories": [],
+      "optional_for_categories": [
+        "chemise",
+        "veste_legere",
+        "manteau"
+      ],
+      "capture_priority": "low"
+    },
+    {
+      "id": "thighCm",
+      "label_fr": "Tour de cuisse",
+      "unit": "cm",
+      "body_zone": "jambe",
+      "description": "Tour haut de cuisse au point fort.",
+      "measurement_method": "mesure bilatérale gauche/droite puis consolidation",
+      "measurement_orientation": "circumference_horizontal",
+      "is_circumference": true,
+      "is_length": false,
+      "required_for_categories": [
+        "jean",
+        "pantalon",
+        "short",
+        "boxer",
+        "slip"
+      ],
+      "optional_for_categories": [],
+      "capture_priority": "high"
+    },
+    {
+      "id": "calfCm",
+      "label_fr": "Tour de mollet",
+      "unit": "cm",
+      "body_zone": "jambe",
+      "description": "Tour de mollet au point le plus fort.",
+      "measurement_method": "mesure bilatérale gauche/droite puis consolidation",
+      "measurement_orientation": "circumference_horizontal",
+      "is_circumference": true,
+      "is_length": false,
+      "required_for_categories": [],
+      "optional_for_categories": [
+        "jean",
+        "pantalon"
+      ],
+      "capture_priority": "low"
+    },
+    {
+      "id": "heightCm",
+      "label_fr": "Stature",
+      "unit": "cm",
+      "body_zone": "global",
+      "description": "Hauteur totale du corps.",
+      "measurement_method": "pied nu, dos au mur",
+      "measurement_orientation": "length_vertical",
+      "is_circumference": false,
+      "is_length": true,
+      "required_for_categories": [
+        "tshirt"
+      ],
+      "optional_for_categories": [
+        "pull",
+        "hoodie",
+        "manteau"
+      ],
+      "capture_priority": "medium"
+    },
+    {
+      "id": "footLengthMm",
+      "label_fr": "Longueur pied",
+      "unit": "mm",
+      "body_zone": "pied",
+      "description": "Longueur talon-orteil.",
+      "measurement_method": "appui au sol sur feuille, mesure maximale",
+      "measurement_orientation": "length_horizontal",
+      "is_circumference": false,
+      "is_length": true,
+      "required_for_categories": [],
+      "optional_for_categories": [],
+      "capture_priority": "low"
+    },
+    {
+      "id": "shoulderCm",
+      "label_fr": "Largeur d'épaules",
+      "unit": "cm",
+      "body_zone": "torse",
+      "description": "Distance acromion à acromion.",
+      "measurement_method": "mesure directe ou via vêtement témoin",
+      "measurement_orientation": "width_horizontal",
+      "is_circumference": false,
+      "is_length": true,
+      "required_for_categories": [],
+      "optional_for_categories": [
+        "veste_legere",
+        "manteau",
+        "chemise"
+      ],
+      "capture_priority": "medium"
+    },
+    {
+      "id": "neckCm",
+      "label_fr": "Tour de cou",
+      "unit": "cm",
+      "body_zone": "cou",
+      "description": "Tour de cou à la base du col.",
+      "measurement_method": "ruban avec jeu de confort doigt",
+      "measurement_orientation": "circumference_horizontal",
+      "is_circumference": true,
+      "is_length": false,
+      "required_for_categories": [],
+      "optional_for_categories": [
+        "chemise"
+      ],
+      "capture_priority": "medium"
+    },
+    {
+      "id": "sleeveLengthCm",
+      "label_fr": "Longueur de manche",
+      "unit": "cm",
+      "body_zone": "bras",
+      "description": "Longueur épaule -> poignet.",
+      "measurement_method": "bras légèrement fléchi",
+      "measurement_orientation": "length_longitudinal",
+      "is_circumference": false,
+      "is_length": true,
+      "required_for_categories": [],
+      "optional_for_categories": [
+        "chemise",
+        "pull",
+        "manteau"
+      ],
+      "capture_priority": "medium"
+    },
+    {
+      "id": "inseamCm",
+      "label_fr": "Entrejambe",
+      "unit": "cm",
+      "body_zone": "jambe",
+      "description": "Longueur entrejambe -> sol/ourlet souhaité.",
+      "measurement_method": "depuis point d'entrejambe jusqu'à cheville/sol",
+      "measurement_orientation": "length_vertical",
+      "is_circumference": false,
+      "is_length": true,
+      "required_for_categories": [],
+      "optional_for_categories": [
+        "jean",
+        "pantalon"
+      ],
+      "capture_priority": "medium"
+    },
+    {
+      "id": "backLengthCm",
+      "label_fr": "Longueur dos",
+      "unit": "cm",
+      "body_zone": "dos",
+      "description": "Base nuque -> bas de vêtement cible.",
+      "measurement_method": "mesure sur dos droit ou vêtement référence",
+      "measurement_orientation": "length_vertical",
+      "is_circumference": false,
+      "is_length": true,
+      "required_for_categories": [],
+      "optional_for_categories": [
+        "chemise",
+        "manteau",
+        "tshirt"
+      ],
+      "capture_priority": "low"
+    }
+  ],
+  "leftRightMeasurementResolutionPolicy": [
+    {
+      "canonical_dimension_id": "bicepsCm",
+      "source_keys": [
+        "leftBicepsCm",
+        "rightBicepsCm"
+      ],
+      "resolution_strategy": "max",
+      "reason": "Sécurise le passage manche quand asymétrie musculaire.",
+      "confidence_impact_if_asymmetry_high": -8
+    },
+    {
+      "canonical_dimension_id": "forearmCm",
+      "source_keys": [
+        "leftForearmCm",
+        "rightForearmCm"
+      ],
+      "resolution_strategy": "max",
+      "reason": "Évite compression au poignet/avant-bras sur chemises et vestes.",
+      "confidence_impact_if_asymmetry_high": -6
+    },
+    {
+      "canonical_dimension_id": "thighCm",
+      "source_keys": [
+        "leftThighCm",
+        "rightThighCm"
+      ],
+      "resolution_strategy": "max",
+      "reason": "Réduit risque de blocage à la cuisse sur bas ajustés.",
+      "confidence_impact_if_asymmetry_high": -10
+    },
+    {
+      "canonical_dimension_id": "calfCm",
+      "source_keys": [
+        "leftCalfCm",
+        "rightCalfCm"
+      ],
+      "resolution_strategy": "max",
+      "reason": "Protège le confort bas de jambe et bottes étroites.",
+      "confidence_impact_if_asymmetry_high": -7
+    }
   ]
 }

@@ -1,16 +1,288 @@
 {
   "version": "menswear-v1",
   "profiles": [
-    { "id": "cotton_jersey_medium", "label": "Jersey coton", "stretch": "medium", "stretchRelaxationCm": 1.2, "shrinkageRisk": 0.28, "uncertaintyPenalty": 4 },
-    { "id": "pique_cotton_medium", "label": "Piqué coton", "stretch": "medium", "stretchRelaxationCm": 1, "shrinkageRisk": 0.24, "uncertaintyPenalty": 4 },
-    { "id": "woven_cotton_low", "label": "Coton tissé", "stretch": "low", "stretchRelaxationCm": 0.4, "shrinkageRisk": 0.22, "uncertaintyPenalty": 5 },
-    { "id": "woven_cotton_medium", "label": "Coton tissé stretch léger", "stretch": "medium", "stretchRelaxationCm": 0.8, "shrinkageRisk": 0.2, "uncertaintyPenalty": 5 },
-    { "id": "wool_blend_medium", "label": "Mélange laine", "stretch": "medium", "stretchRelaxationCm": 1, "shrinkageRisk": 0.35, "uncertaintyPenalty": 7 },
-    { "id": "cotton_fleece_medium", "label": "Molleton coton", "stretch": "medium", "stretchRelaxationCm": 1.2, "shrinkageRisk": 0.32, "uncertaintyPenalty": 5 },
-    { "id": "woven_shell_low", "label": "Shell tissé", "stretch": "low", "stretchRelaxationCm": 0.2, "shrinkageRisk": 0.08, "uncertaintyPenalty": 4 },
-    { "id": "wool_coat_none", "label": "Drap de laine", "stretch": "none", "stretchRelaxationCm": 0, "shrinkageRisk": 0.12, "uncertaintyPenalty": 6 },
-    { "id": "denim_low", "label": "Denim faible stretch", "stretch": "low", "stretchRelaxationCm": 0.4, "shrinkageRisk": 0.18, "uncertaintyPenalty": 5 },
-    { "id": "denim_stretch_medium", "label": "Denim stretch", "stretch": "medium", "stretchRelaxationCm": 1.2, "shrinkageRisk": 0.16, "uncertaintyPenalty": 5 },
-    { "id": "elastane_underwear_high", "label": "Coton élasthanne", "stretch": "high", "stretchRelaxationCm": 2.2, "shrinkageRisk": 0.12, "uncertaintyPenalty": 4 }
+    {
+      "id": "cotton_jersey_medium",
+      "label": "Jersey coton",
+      "stretch": "medium",
+      "stretchRelaxationCm": 1.2,
+      "shrinkageRisk": 0.28,
+      "uncertaintyPenalty": 4
+    },
+    {
+      "id": "pique_cotton_medium",
+      "label": "Piqué coton",
+      "stretch": "medium",
+      "stretchRelaxationCm": 1,
+      "shrinkageRisk": 0.24,
+      "uncertaintyPenalty": 4
+    },
+    {
+      "id": "woven_cotton_low",
+      "label": "Coton tissé",
+      "stretch": "low",
+      "stretchRelaxationCm": 0.4,
+      "shrinkageRisk": 0.22,
+      "uncertaintyPenalty": 5
+    },
+    {
+      "id": "woven_cotton_medium",
+      "label": "Coton tissé stretch léger",
+      "stretch": "medium",
+      "stretchRelaxationCm": 0.8,
+      "shrinkageRisk": 0.2,
+      "uncertaintyPenalty": 5
+    },
+    {
+      "id": "wool_blend_medium",
+      "label": "Mélange laine",
+      "stretch": "medium",
+      "stretchRelaxationCm": 1,
+      "shrinkageRisk": 0.35,
+      "uncertaintyPenalty": 7
+    },
+    {
+      "id": "cotton_fleece_medium",
+      "label": "Molleton coton",
+      "stretch": "medium",
+      "stretchRelaxationCm": 1.2,
+      "shrinkageRisk": 0.32,
+      "uncertaintyPenalty": 5
+    },
+    {
+      "id": "woven_shell_low",
+      "label": "Shell tissé",
+      "stretch": "low",
+      "stretchRelaxationCm": 0.2,
+      "shrinkageRisk": 0.08,
+      "uncertaintyPenalty": 4
+    },
+    {
+      "id": "wool_coat_none",
+      "label": "Drap de laine",
+      "stretch": "none",
+      "stretchRelaxationCm": 0,
+      "shrinkageRisk": 0.12,
+      "uncertaintyPenalty": 6
+    },
+    {
+      "id": "denim_low",
+      "label": "Denim faible stretch",
+      "stretch": "low",
+      "stretchRelaxationCm": 0.4,
+      "shrinkageRisk": 0.18,
+      "uncertaintyPenalty": 5
+    },
+    {
+      "id": "denim_stretch_medium",
+      "label": "Denim stretch",
+      "stretch": "medium",
+      "stretchRelaxationCm": 1.2,
+      "shrinkageRisk": 0.16,
+      "uncertaintyPenalty": 5
+    },
+    {
+      "id": "elastane_underwear_high",
+      "label": "Coton élasthanne",
+      "stretch": "high",
+      "stretchRelaxationCm": 2.2,
+      "shrinkageRisk": 0.12,
+      "uncertaintyPenalty": 4
+    }
+  ],
+  "materialModifiers": [
+    {
+      "id": "cotton_jersey_medium",
+      "label_fr": "Jersey coton moyen",
+      "stretch_horizontal": "medium",
+      "stretch_vertical": "low",
+      "recovery": "medium",
+      "growth_over_time": "low",
+      "thickness": "light",
+      "drape": "fluid",
+      "compression_effect": "low",
+      "shrinkage_risk": "medium",
+      "impact_on_measurements": {
+        "chestCm": -0.8,
+        "stomachCm": -0.6
+      },
+      "recommended_ease_adjustments": {
+        "tops": 0
+      }
+    },
+    {
+      "id": "pique_cotton_medium",
+      "label_fr": "Piqué coton moyen",
+      "stretch_horizontal": "medium",
+      "stretch_vertical": "low",
+      "recovery": "medium",
+      "growth_over_time": "low",
+      "thickness": "medium",
+      "drape": "semi_structured",
+      "compression_effect": "low",
+      "shrinkage_risk": "medium",
+      "impact_on_measurements": {
+        "chestCm": -0.5,
+        "stomachCm": -0.4
+      },
+      "recommended_ease_adjustments": {
+        "polo": 0.3
+      }
+    },
+    {
+      "id": "woven_cotton_low",
+      "label_fr": "Coton tissé faible stretch",
+      "stretch_horizontal": "low",
+      "stretch_vertical": "low",
+      "recovery": "high",
+      "growth_over_time": "low",
+      "thickness": "light",
+      "drape": "structured",
+      "compression_effect": "none",
+      "shrinkage_risk": "medium",
+      "impact_on_measurements": {
+        "chestCm": 0.3,
+        "waistCm": 0.2
+      },
+      "recommended_ease_adjustments": {
+        "chemise": 1
+      }
+    },
+    {
+      "id": "wool_blend_medium",
+      "label_fr": "Mélange laine moyen",
+      "stretch_horizontal": "medium",
+      "stretch_vertical": "medium",
+      "recovery": "medium",
+      "growth_over_time": "medium",
+      "thickness": "medium",
+      "drape": "fluid",
+      "compression_effect": "low",
+      "shrinkage_risk": "high",
+      "impact_on_measurements": {
+        "chestCm": 0.4,
+        "sleeveLengthCm": 0.3
+      },
+      "recommended_ease_adjustments": {
+        "pull": 0.8
+      }
+    },
+    {
+      "id": "cotton_fleece_medium",
+      "label_fr": "Molleton coton moyen",
+      "stretch_horizontal": "medium",
+      "stretch_vertical": "low",
+      "recovery": "medium",
+      "growth_over_time": "low",
+      "thickness": "thick",
+      "drape": "heavy",
+      "compression_effect": "low",
+      "shrinkage_risk": "medium",
+      "impact_on_measurements": {
+        "chestCm": 0.6,
+        "bicepsCm": 0.5
+      },
+      "recommended_ease_adjustments": {
+        "hoodie": 1.2
+      }
+    },
+    {
+      "id": "woven_shell_low",
+      "label_fr": "Shell tissé faible stretch",
+      "stretch_horizontal": "low",
+      "stretch_vertical": "low",
+      "recovery": "high",
+      "growth_over_time": "none",
+      "thickness": "medium",
+      "drape": "structured",
+      "compression_effect": "none",
+      "shrinkage_risk": "low",
+      "impact_on_measurements": {
+        "chestCm": 0.8,
+        "bicepsCm": 0.6
+      },
+      "recommended_ease_adjustments": {
+        "veste_legere": 1.5
+      }
+    },
+    {
+      "id": "wool_coat_none",
+      "label_fr": "Drap de laine sans stretch",
+      "stretch_horizontal": "none",
+      "stretch_vertical": "none",
+      "recovery": "high",
+      "growth_over_time": "none",
+      "thickness": "thick",
+      "drape": "structured",
+      "compression_effect": "none",
+      "shrinkage_risk": "low",
+      "impact_on_measurements": {
+        "chestCm": 1.5,
+        "stomachCm": 1.2
+      },
+      "recommended_ease_adjustments": {
+        "manteau": 2.2
+      }
+    },
+    {
+      "id": "denim_low",
+      "label_fr": "Denim faible stretch",
+      "stretch_horizontal": "low",
+      "stretch_vertical": "low",
+      "recovery": "medium",
+      "growth_over_time": "medium",
+      "thickness": "medium",
+      "drape": "semi_structured",
+      "compression_effect": "medium",
+      "shrinkage_risk": "medium",
+      "impact_on_measurements": {
+        "waistCm": 0.4,
+        "thighCm": 0.7
+      },
+      "recommended_ease_adjustments": {
+        "jean": 0.6
+      }
+    },
+    {
+      "id": "woven_cotton_medium",
+      "label_fr": "Coton tissé stretch léger",
+      "stretch_horizontal": "medium",
+      "stretch_vertical": "low",
+      "recovery": "medium",
+      "growth_over_time": "low",
+      "thickness": "light",
+      "drape": "semi_structured",
+      "compression_effect": "low",
+      "shrinkage_risk": "medium",
+      "impact_on_measurements": {
+        "waistCm": 0.2,
+        "seatHipsCm": 0.2
+      },
+      "recommended_ease_adjustments": {
+        "pantalon": 0.4,
+        "short": 0.4
+      }
+    },
+    {
+      "id": "elastane_underwear_high",
+      "label_fr": "Maille élasthanne forte",
+      "stretch_horizontal": "high",
+      "stretch_vertical": "high",
+      "recovery": "high",
+      "growth_over_time": "low",
+      "thickness": "light",
+      "drape": "body_following",
+      "compression_effect": "high",
+      "shrinkage_risk": "low",
+      "impact_on_measurements": {
+        "waistCm": -1.3,
+        "seatHipsCm": -1.6,
+        "thighCm": -1.1
+      },
+      "recommended_ease_adjustments": {
+        "boxer": -0.8,
+        "slip": -1.2
+      }
+    }
   ]
 }

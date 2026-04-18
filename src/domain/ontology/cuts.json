@@ -5,13 +5,25 @@
       "id": "close",
       "label": "Près du corps",
       "description": "Réduit l’aisance cible, à utiliser seulement si la compression est acceptable.",
-      "dimensionDeltasCm": { "chestCm": -3, "waistCm": -1.5, "seatHipsCm": -1, "thighCm": -1, "bicepsCm": -1 }
+      "dimensionDeltasCm": {
+        "chestCm": -3,
+        "waistCm": -1.5,
+        "seatHipsCm": -1,
+        "thighCm": -1,
+        "bicepsCm": -1
+      }
     },
     {
       "id": "slim",
       "label": "Slim",
       "description": "Coupe ajustée mais moins compressive que close.",
-      "dimensionDeltasCm": { "chestCm": -2, "waistCm": -1, "seatHipsCm": -0.8, "thighCm": -0.5, "bicepsCm": -0.7 }
+      "dimensionDeltasCm": {
+        "chestCm": -2,
+        "waistCm": -1,
+        "seatHipsCm": -0.8,
+        "thighCm": -0.5,
+        "bicepsCm": -0.7
+      }
     },
     {
       "id": "regular",
@@ -23,25 +35,197 @@
       "id": "relaxed",
       "label": "Relaxed",
       "description": "Ajoute de l’aisance pour confort et amplitude.",
-      "dimensionDeltasCm": { "chestCm": 4, "waistCm": 2, "seatHipsCm": 3, "thighCm": 2.5, "bicepsCm": 2 }
+      "dimensionDeltasCm": {
+        "chestCm": 4,
+        "waistCm": 2,
+        "seatHipsCm": 3,
+        "thighCm": 2.5,
+        "bicepsCm": 2
+      }
     },
     {
       "id": "oversize",
       "label": "Oversize",
       "description": "Ajoute fortement du volume sur hauts et outerwear.",
-      "dimensionDeltasCm": { "chestCm": 8, "stomachCm": 7, "bicepsCm": 3, "waistCm": 3, "seatHipsCm": 4 }
+      "dimensionDeltasCm": {
+        "chestCm": 8,
+        "stomachCm": 7,
+        "bicepsCm": 3,
+        "waistCm": 3,
+        "seatHipsCm": 4
+      }
     },
     {
       "id": "straight",
       "label": "Straight",
       "description": "Bas droit, stabilise la cuisse et le mollet.",
-      "dimensionDeltasCm": { "thighCm": 2, "calfCm": 2 }
+      "dimensionDeltasCm": {
+        "thighCm": 2,
+        "calfCm": 2
+      }
     },
     {
       "id": "tapered",
       "label": "Tapered",
       "description": "Volume cuisse conservé, bas de jambe plus ajusté.",
-      "dimensionDeltasCm": { "thighCm": 1.5, "calfCm": -0.5 }
+      "dimensionDeltasCm": {
+        "thighCm": 1.5,
+        "calfCm": -0.5
+      }
+    }
+  ],
+  "cutModifiers": [
+    {
+      "id": "close",
+      "label_fr": "Près du corps",
+      "description": "Réduit l’aisance cible, à utiliser seulement si la compression est acceptable.",
+      "impact_on_measurements": {
+        "chestCm": -3,
+        "waistCm": -1.5,
+        "seatHipsCm": -1,
+        "thighCm": -1,
+        "bicepsCm": -1
+      },
+      "silhouette_intent": "compression maîtrisée",
+      "category_restrictions": [
+        "tshirt",
+        "polo",
+        "chemise",
+        "pull",
+        "hoodie",
+        "veste_legere",
+        "manteau",
+        "jean",
+        "pantalon",
+        "short",
+        "boxer",
+        "slip"
+      ]
+    },
+    {
+      "id": "slim",
+      "label_fr": "Slim",
+      "description": "Coupe ajustée mais moins compressive que close.",
+      "impact_on_measurements": {
+        "chestCm": -2,
+        "waistCm": -1,
+        "seatHipsCm": -0.8,
+        "thighCm": -0.5,
+        "bicepsCm": -0.7
+      },
+      "silhouette_intent": "ajusté net",
+      "category_restrictions": [
+        "tshirt",
+        "polo",
+        "chemise",
+        "pull",
+        "hoodie",
+        "veste_legere",
+        "manteau",
+        "jean",
+        "pantalon",
+        "short",
+        "boxer",
+        "slip"
+      ]
+    },
+    {
+      "id": "regular",
+      "label_fr": "Regular",
+      "description": "Coupe de référence sans delta additionnel.",
+      "impact_on_measurements": {},
+      "silhouette_intent": "équilibre standard",
+      "category_restrictions": [
+        "tshirt",
+        "polo",
+        "chemise",
+        "pull",
+        "hoodie",
+        "veste_legere",
+        "manteau",
+        "jean",
+        "pantalon",
+        "short",
+        "boxer",
+        "slip"
+      ]
+    },
+    {
+      "id": "relaxed",
+      "label_fr": "Relaxed",
+      "description": "Ajoute de l’aisance pour confort et amplitude.",
+      "impact_on_measurements": {
+        "chestCm": 4,
+        "waistCm": 2,
+        "seatHipsCm": 3,
+        "thighCm": 2.5,
+        "bicepsCm": 2
+      },
+      "silhouette_intent": "confort et mobilité",
+      "category_restrictions": [
+        "tshirt",
+        "polo",
+        "chemise",
+        "pull",
+        "hoodie",
+        "veste_legere",
+        "manteau",
+        "jean",
+        "pantalon",
+        "short",
+        "boxer",
+        "slip"
+      ]
+    },
+    {
+      "id": "oversize",
+      "label_fr": "Oversize",
+      "description": "Ajoute fortement du volume sur hauts et outerwear.",
+      "impact_on_measurements": {
+        "chestCm": 8,
+        "stomachCm": 7,
+        "bicepsCm": 3,
+        "waistCm": 3,
+        "seatHipsCm": 4
+      },
+      "silhouette_intent": "volume intentionnel",
+      "category_restrictions": [
+        "tshirt",
+        "pull",
+        "hoodie",
+        "veste_legere",
+        "manteau"
+      ]
+    },
+    {
+      "id": "straight",
+      "label_fr": "Straight",
+      "description": "Bas droit, stabilise la cuisse et le mollet.",
+      "impact_on_measurements": {
+        "thighCm": 2,
+        "calfCm": 2
+      },
+      "silhouette_intent": "jambe droite",
+      "category_restrictions": [
+        "jean",
+        "pantalon",
+        "short"
+      ]
+    },
+    {
+      "id": "tapered",
+      "label_fr": "Tapered",
+      "description": "Volume cuisse conservé, bas de jambe plus ajusté.",
+      "impact_on_measurements": {
+        "thighCm": 1.5,
+        "calfCm": -0.5
+      },
+      "silhouette_intent": "jambe fuselée",
+      "category_restrictions": [
+        "jean",
+        "pantalon",
+        "short"
+      ]
     }
   ]
 }
