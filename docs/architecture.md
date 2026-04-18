@@ -3,11 +3,13 @@
 ## Découpage
 
 - `src/domain`: logique métier indépendante de React.
+- `src/domain/ontology`: ontologie menswear v1 validée par Zod et reliée à la taxonomie moteur.
+- `src/domain/sizing`: règles pures d’aisance, scoring, pondération et confiance.
 - `src/services`: import, export, recommandation et persistance.
 - `src/db`: schéma Drizzle, repository et mappers.
 - `src/features`: pages applicatives.
 - `src/components`: shell, composants métier et composants shadcn/ui internalisés.
-- `src-tauri`: app desktop, pont SQLite et migration initiale.
+- `src-tauri`: app desktop, pont SQLite et exécution des migrations SQL versionnées.
 
 ## Flux de données
 
@@ -20,6 +22,7 @@ flowchart LR
   Profile --> Engine["Recommendation Engine"]
   Guide --> Engine
   Preferences["Comfort Preferences"] --> Engine
+  Ontology["Ontologie menswear v1"] --> Engine
   Engine --> Result["RecommendationResult expliqué"]
   Result --> Store["AppState validé"]
   Store --> Tauri["Commandes Tauri"]
@@ -33,6 +36,7 @@ flowchart LR
 - Les données sensibles restent locales.
 - Les guides sample sont explicitement marqués et diminuent la confiance.
 - Les conversions de tailles génériques ne sont pas traitées comme exactes.
+- Les vues `ontology-viewer`, `rules-explorer` et `diagnostic-viewer` sont reliées au shell et aux exports.
 
 ## Persistance
 

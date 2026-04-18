@@ -1,6 +1,11 @@
 import { sql } from "drizzle-orm";
 import { integer, real, sqliteTable, text, uniqueIndex } from "drizzle-orm/sqlite-core";
 
+export * from "@/db/schema/ontology";
+export * from "@/db/schema/guides";
+export * from "@/db/schema/rules";
+export * from "@/db/schema/diagnostics";
+
 const timestamps = {
   createdAt: text("created_at").notNull().default(sql`CURRENT_TIMESTAMP`),
   updatedAt: text("updated_at").notNull().default(sql`CURRENT_TIMESTAMP`)

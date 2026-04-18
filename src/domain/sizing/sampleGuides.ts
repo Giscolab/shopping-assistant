@@ -105,6 +105,18 @@ function bottomGuide(category: GarmentCategory, id: string, label: string, stret
 
 export function createSampleGuides(): BrandSizeGuide[] {
   const guides = [
+    alphaTopGuide("tshirt", "guide_sample_tshirt_v1", "T-shirt menswear v1 illustratif", "medium"),
+    alphaTopGuide("polo", "guide_sample_polo_v1", "Polo menswear v1 illustratif", "medium"),
+    alphaTopGuide("chemise", "guide_sample_chemise_v1", "Chemise menswear v1 illustratif", "low"),
+    alphaTopGuide("pull", "guide_sample_pull_v1", "Pull menswear v1 illustratif", "medium"),
+    alphaTopGuide("hoodie", "guide_sample_hoodie_v1", "Hoodie menswear v1 illustratif", "medium"),
+    alphaTopGuide("veste_legere", "guide_sample_veste_legere_v1", "Veste légère menswear v1 illustratif", "low"),
+    alphaTopGuide("manteau", "guide_sample_manteau_v1", "Manteau menswear v1 illustratif", "none"),
+    bottomGuide("jean", "guide_sample_jean_v1", "Jean menswear v1 illustratif", "low"),
+    bottomGuide("pantalon", "guide_sample_pantalon_v1", "Pantalon menswear v1 illustratif", "low"),
+    bottomGuide("short", "guide_sample_short_v1", "Short menswear v1 illustratif", "medium"),
+    bottomGuide("boxer", "guide_sample_boxer_v1", "Boxer menswear v1 illustratif", "high"),
+    bottomGuide("slip", "guide_sample_slip_v1", "Slip menswear v1 illustratif", "high"),
     alphaTopGuide("tshirts", "guide_sample_tshirts", "T-shirts alpha illustratif", "medium"),
     alphaTopGuide("shirts", "guide_sample_shirts", "Chemises alpha illustratif", "low"),
     alphaTopGuide("sweaters", "guide_sample_sweaters", "Pulls alpha illustratif", "medium"),

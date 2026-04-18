@@ -21,7 +21,17 @@ const tables = [
   "recommendation_results",
   "import_jobs",
   "import_sources",
-  "app_settings"
+  "app_settings",
+  "ontology_bundles",
+  "ontology_families",
+  "ontology_garment_categories",
+  "ontology_measurement_mappings",
+  "ontology_priority_dimensions",
+  "sizing_rule_sets",
+  "sizing_rule_dimensions",
+  "brand_guide_assumptions",
+  "brand_guide_quality_checks",
+  "diagnostic_events"
 ];
 
 export function DataModelPage() {

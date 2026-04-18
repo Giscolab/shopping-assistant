@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import type { AppState } from "@/services/persistence/appState";
+import { DiagnosticViewerPanel } from "@/features/diagnostic-viewer/DiagnosticViewerPanel";
 
 interface DiagnosticsPageProps {
   state: AppState;
@@ -110,6 +111,10 @@ export function DiagnosticsPage({ state }: DiagnosticsPageProps) {
           )}
         </CardContent>
       </Card>
+
+      <div className="mt-6">
+        <DiagnosticViewerPanel state={state} />
+      </div>
     </div>
   );
 }

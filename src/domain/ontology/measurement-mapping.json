@@ -1,0 +1,20 @@
+{
+  "version": "menswear-v1",
+  "canonicalDimensions": [
+    { "id": "chestCm", "labelFr": "Poitrine", "bodyKeys": ["chestCm"], "guideAliases": ["chest", "poitrine", "tour de poitrine"] },
+    { "id": "stomachCm", "labelFr": "Ventre", "bodyKeys": ["stomachCm", "waistCm"], "guideAliases": ["stomach", "ventre", "abdomen"] },
+    { "id": "waistCm", "labelFr": "Taille", "bodyKeys": ["waistCm"], "guideAliases": ["waist", "taille", "tour de taille"] },
+    { "id": "seatHipsCm", "labelFr": "Hanches / bassin", "bodyKeys": ["seatHipsCm"], "guideAliases": ["hips", "seat", "hanches", "bassin", "fessiers"] },
+    { "id": "bicepsCm", "labelFr": "Biceps", "bodyKeys": ["leftBicepsCm", "rightBicepsCm"], "guideAliases": ["biceps", "upper arm", "bras"] },
+    { "id": "forearmCm", "labelFr": "Avant-bras", "bodyKeys": ["leftForearmCm", "rightForearmCm"], "guideAliases": ["forearm", "avant-bras"] },
+    { "id": "thighCm", "labelFr": "Cuisse", "bodyKeys": ["leftThighCm", "rightThighCm"], "guideAliases": ["thigh", "cuisse"] },
+    { "id": "calfCm", "labelFr": "Mollet", "bodyKeys": ["leftCalfCm", "rightCalfCm"], "guideAliases": ["calf", "mollet"] },
+    { "id": "heightCm", "labelFr": "Taille corporelle", "bodyKeys": ["heightCm"], "guideAliases": ["height", "stature", "taille corporelle"] },
+    { "id": "footLengthMm", "labelFr": "Longueur de pied", "bodyKeys": ["footLengthMm"], "guideAliases": ["foot length", "longueur de pied"] },
+    { "id": "shoulderCm", "labelFr": "Épaules", "bodyKeys": [], "guideAliases": ["shoulder", "épaules", "largeur épaules"], "requiresGuideOnly": true },
+    { "id": "neckCm", "labelFr": "Tour de cou", "bodyKeys": [], "guideAliases": ["neck", "tour de cou"], "requiresGuideOnly": true },
+    { "id": "sleeveLengthCm", "labelFr": "Longueur manche", "bodyKeys": [], "guideAliases": ["sleeve", "longueur manche"], "requiresGuideOnly": true },
+    { "id": "inseamCm", "labelFr": "Entrejambe", "bodyKeys": [], "guideAliases": ["inseam", "entrejambe"], "requiresGuideOnly": true },
+    { "id": "backLengthCm", "labelFr": "Longueur buste", "bodyKeys": [], "guideAliases": ["body length", "back length", "longueur buste"], "requiresGuideOnly": true }
+  ]
+}

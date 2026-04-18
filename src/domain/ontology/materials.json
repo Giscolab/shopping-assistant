@@ -1,0 +1,16 @@
+{
+  "version": "menswear-v1",
+  "profiles": [
+    { "id": "cotton_jersey_medium", "label": "Jersey coton", "stretch": "medium", "stretchRelaxationCm": 1.2, "shrinkageRisk": 0.28, "uncertaintyPenalty": 4 },
+    { "id": "pique_cotton_medium", "label": "Piqué coton", "stretch": "medium", "stretchRelaxationCm": 1, "shrinkageRisk": 0.24, "uncertaintyPenalty": 4 },
+    { "id": "woven_cotton_low", "label": "Coton tissé", "stretch": "low", "stretchRelaxationCm": 0.4, "shrinkageRisk": 0.22, "uncertaintyPenalty": 5 },
+    { "id": "woven_cotton_medium", "label": "Coton tissé stretch léger", "stretch": "medium", "stretchRelaxationCm": 0.8, "shrinkageRisk": 0.2, "uncertaintyPenalty": 5 },
+    { "id": "wool_blend_medium", "label": "Mélange laine", "stretch": "medium", "stretchRelaxationCm": 1, "shrinkageRisk": 0.35, "uncertaintyPenalty": 7 },
+    { "id": "cotton_fleece_medium", "label": "Molleton coton", "stretch": "medium", "stretchRelaxationCm": 1.2, "shrinkageRisk": 0.32, "uncertaintyPenalty": 5 },
+    { "id": "woven_shell_low", "label": "Shell tissé", "stretch": "low", "stretchRelaxationCm": 0.2, "shrinkageRisk": 0.08, "uncertaintyPenalty": 4 },
+    { "id": "wool_coat_none", "label": "Drap de laine", "stretch": "none", "stretchRelaxationCm": 0, "shrinkageRisk": 0.12, "uncertaintyPenalty": 6 },
+    { "id": "denim_low", "label": "Denim faible stretch", "stretch": "low", "stretchRelaxationCm": 0.4, "shrinkageRisk": 0.18, "uncertaintyPenalty": 5 },
+    { "id": "denim_stretch_medium", "label": "Denim stretch", "stretch": "medium", "stretchRelaxationCm": 1.2, "shrinkageRisk": 0.16, "uncertaintyPenalty": 5 },
+    { "id": "elastane_underwear_high", "label": "Coton élasthanne", "stretch": "high", "stretchRelaxationCm": 2.2, "shrinkageRisk": 0.12, "uncertaintyPenalty": 4 }
+  ]
+}

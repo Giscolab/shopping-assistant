@@ -2,6 +2,7 @@ import {
   Activity,
   Archive,
   BadgeCent,
+  BookOpen,
   ClipboardList,
   Database,
   FileInput,
@@ -11,6 +12,7 @@ import {
   Ruler,
   Settings,
   Shirt,
+  Sigma,
   SlidersHorizontal
 } from "lucide-react";
 
@@ -30,6 +32,8 @@ export const navGroups = [
       { id: "body-profile", label: "Body Profile", icon: Ruler },
       { id: "comfort", label: "Préférences confort", icon: ClipboardList },
       { id: "garment-categories", label: "Catégories", icon: Shirt },
+      { id: "ontology", label: "Ontologie", icon: BookOpen },
+      { id: "rules", label: "Règles sizing", icon: Sigma },
       { id: "brand-guides", label: "Guides marques", icon: Shirt },
       { id: "size-systems", label: "Systèmes tailles", icon: BadgeCent },
       { id: "imports", label: "Imports / Exports", icon: FileInput }

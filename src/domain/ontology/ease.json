@@ -1,0 +1,17 @@
+{
+  "version": "menswear-v1",
+  "profiles": [
+    { "id": "top_light_knit", "label": "Haut maille léger", "defaultEaseCm": { "chestCm": 6, "stomachCm": 5 }, "notes": "T-shirt et pièces proches." },
+    { "id": "top_structured_knit", "label": "Maille structurée", "defaultEaseCm": { "chestCm": 6, "stomachCm": 5, "bicepsCm": 3 }, "notes": "Polo et maille piquée." },
+    { "id": "top_woven_low_stretch", "label": "Haut tissé faible stretch", "defaultEaseCm": { "chestCm": 8, "stomachCm": 7, "bicepsCm": 4 }, "notes": "Chemise et overshirt." },
+    { "id": "top_mid_layer_knit", "label": "Maille de surcouche", "defaultEaseCm": { "chestCm": 9, "stomachCm": 8, "bicepsCm": 5 }, "notes": "Pull et cardigan." },
+    { "id": "top_relaxed_fleece", "label": "Fleece relax", "defaultEaseCm": { "chestCm": 10, "stomachCm": 9, "bicepsCm": 5 }, "notes": "Hoodie." },
+    { "id": "outerwear_light", "label": "Outerwear léger", "defaultEaseCm": { "chestCm": 12, "stomachCm": 10, "bicepsCm": 6 }, "notes": "Veste légère." },
+    { "id": "outerwear_winter", "label": "Outerwear hiver", "defaultEaseCm": { "chestCm": 16, "stomachCm": 14, "bicepsCm": 8 }, "notes": "Manteau, parka, doudoune." },
+    { "id": "bottom_denim", "label": "Denim", "defaultEaseCm": { "waistCm": 1, "seatHipsCm": 2, "thighCm": 2 }, "notes": "Jean." },
+    { "id": "bottom_woven", "label": "Bas tissé", "defaultEaseCm": { "waistCm": 2, "seatHipsCm": 3, "thighCm": 3 }, "notes": "Pantalon, chino." },
+    { "id": "bottom_short", "label": "Short", "defaultEaseCm": { "waistCm": 2, "seatHipsCm": 3, "thighCm": 3 }, "notes": "Short et bermuda." },
+    { "id": "underwear_stretch", "label": "Sous-vêtement stretch", "defaultEaseCm": { "waistCm": 0, "seatHipsCm": 0, "thighCm": 0 }, "notes": "Boxer." },
+    { "id": "underwear_stretch_close", "label": "Sous-vêtement stretch proche", "defaultEaseCm": { "waistCm": 0, "seatHipsCm": 0, "thighCm": 0 }, "notes": "Slip." }
+  ]
+}

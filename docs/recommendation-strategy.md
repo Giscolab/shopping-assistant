@@ -23,6 +23,15 @@ target = body_dimension
 6. Pénaliser les mesures manquantes, guides incomplets, incertitude et données sample.
 7. Retourner taille primaire, alternatives proches, confiance, explications, warnings et hypothèses.
 
+## Modules purs
+
+- `src/domain/sizing/ease.ts`: calcul de cible et biais rétrécissement.
+- `src/domain/sizing/rules.ts`: scoring de plage et labels dimensionnels.
+- `src/domain/sizing/weights.ts`: pondération et dimensions dominantes.
+- `src/domain/sizing/confidence.ts`: score candidat, confiance et seuil d’alternatives proches.
+
+Le moteur `src/domain/recommendation/engine.ts` consomme ces modules. La logique ne vit pas dans les composants React.
+
 ## Limites assumées
 
 - Les guides sample ne sont pas des standards.

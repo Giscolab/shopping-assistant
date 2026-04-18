@@ -61,11 +61,36 @@ L’application ne contient pas de standards officiels inventés. Les guides emb
 
 ## Desktop
 
-La configuration Tauri est dans `src-tauri`. La persistance SQLite est locale et versionnée par `drizzle/0000_initial.sql`. Le pont Tauri expose uniquement:
+La configuration Tauri est dans `src-tauri`. La persistance SQLite est locale et versionnée par `drizzle/0000_initial.sql` et `drizzle/0001_flaky_scrambler.sql`. Le pont Tauri expose uniquement:
 
 - `load_app_state`
 - `save_app_state`
+- `get_database_diagnostics`
 
 Ces commandes synchronisent un snapshot applicatif validé et alimentent aussi les tables normalisées pour diagnostic et évolution future.
 
-Voir `docs/architecture.md`, `docs/data-model.md`, `docs/recommendation-strategy.md` et `docs/imports.md`.
+## Ontologie et règles v1
+
+La v2 du projet ajoute une ontologie menswear v1 dans `src/domain/ontology` et deux vues intégrées:
+
+- `Ontologie`: couverture catégories, mesures requises et lien avec les guides.
+- `Règles sizing`: exploration des formules d’aisance, coupe, matière et pondération.
+
+Le pont Tauri expose `get_database_diagnostics` pour le diagnostic local SQLite quand l’application tourne en desktop.
+
+Voir `docs/architecture.md`, `docs/data-model.md`, `docs/recommendation-strategy.md`, `docs/imports.md` et `docs/ontology.md`.
+
+## Validation exécutée
+
+Le 18 avril 2026, les validations suivantes ont été exécutées dans ce dépôt:
+
+- `pnpm lint`: OK.
+- `pnpm test`: OK, 6 fichiers et 8 tests.
+- `pnpm test:unit`: OK, 4 fichiers et 6 tests.
+- `pnpm test:integration`: OK, 2 fichiers et 2 tests.
+- `pnpm db:migrate`: OK.
+- `pnpm build`: OK.
+- `pnpm test:e2e`: OK, 1 parcours Playwright.
+- `pnpm dev`: démarre sur `127.0.0.1:1420`; contrôle navigateur Playwright manuel OK, sans overlay ni erreur console.
+- `pnpm exec tauri info`: WebView2 OK, Rust/Cargo/MSVC absents dans l’environnement courant.
+- `pnpm tauri:build`: non finalisable dans cet environnement car `cargo` est absent.

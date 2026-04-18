@@ -1,10 +1,22 @@
 use rusqlite::{params, Connection};
+use serde::Serialize;
 use serde_json::Value;
+use std::collections::BTreeMap;
 use std::fs;
 use std::path::PathBuf;
 use tauri::Manager;
 
 const INITIAL_MIGRATION: &str = include_str!("../../drizzle/0000_initial.sql");
+const ONTOLOGY_MIGRATION: &str = include_str!("../../drizzle/0001_flaky_scrambler.sql");
+
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+struct DatabaseDiagnostics {
+    runtime: &'static str,
+    database_path: String,
+    schema_version: i64,
+    table_counts: BTreeMap<String, i64>,
+}
 
 fn db_path(app: &tauri::AppHandle) -> Result<PathBuf, String> {
     let base = dirs::data_local_dir()
@@ -20,6 +32,8 @@ fn connection(app: &tauri::AppHandle) -> Result<Connection, String> {
     let conn = Connection::open(db_path(app)?).map_err(|error| error.to_string())?;
     conn.execute_batch(INITIAL_MIGRATION)
         .map_err(|error| format!("SQLite migration failed: {error}"))?;
+    conn.execute_batch(ONTOLOGY_MIGRATION)
+        .map_err(|error| format!("SQLite ontology migration failed: {error}"))?;
     Ok(conn)
 }
 
@@ -404,9 +418,45 @@ fn save_app_state(app: tauri::AppHandle, state: Value) -> Result<(), String> {
     Ok(())
 }
 
+#[tauri::command]
+fn get_database_diagnostics(app: tauri::AppHandle) -> Result<DatabaseDiagnostics, String> {
+    let path = db_path(&app)?;
+    let conn = connection(&app)?;
+    let tables = [
+        "body_profiles",
+        "body_measurements",
+        "brand_size_guides",
+        "brand_size_guide_rows",
+        "brand_size_guide_measurements",
+        "recommendation_runs",
+        "import_jobs",
+        "ontology_bundles",
+        "ontology_garment_categories",
+        "sizing_rule_sets",
+        "diagnostic_events",
+    ];
+    let mut table_counts = BTreeMap::new();
+    for table in tables {
+        let count: i64 = conn
+            .query_row(&format!("SELECT COUNT(*) FROM {table}"), [], |row| row.get(0))
+            .map_err(|error| error.to_string())?;
+        table_counts.insert(table.to_string(), count);
+    }
+    Ok(DatabaseDiagnostics {
+        runtime: "tauri",
+        database_path: path.to_string_lossy().to_string(),
+        schema_version: 2,
+        table_counts,
+    })
+}
+
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![load_app_state, save_app_state])
+        .invoke_handler(tauri::generate_handler![
+            load_app_state,
+            save_app_state,
+            get_database_diagnostics
+        ])
         .run(tauri::generate_context!())
         .expect("error while running Size Intelligence Studio");
 }

@@ -6,6 +6,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import type { AppState } from "@/services/persistence/appState";
 import { exportBodyProfileJson, exportRecommendationRunsCsv } from "@/services/export/exporters";
 import { downloadTextFile } from "@/lib/utils";
+import { exportOntologyBundleJson } from "@/domain/ontology";
+import { exportDiagnosticsJson } from "@/services/diagnostics/ontologyDiagnostics";
 
 interface ImportsExportsPageProps {
   state: AppState;
@@ -46,6 +48,12 @@ export function ImportsExportsPage({ state }: ImportsExportsPageProps) {
               onClick={() => downloadTextFile("recommendation-runs.csv", exportRecommendationRunsCsv(state.recommendationRuns), "text/csv")}
             >
               Exporter les recommandations CSV
+            </Button>
+            <Button variant="outline" onClick={() => downloadTextFile("ontology-bundle.json", exportOntologyBundleJson())}>
+              Exporter l’ontologie JSON
+            </Button>
+            <Button variant="outline" onClick={() => downloadTextFile("diagnostics.json", exportDiagnosticsJson(state))}>
+              Exporter les diagnostics JSON
             </Button>
           </CardContent>
         </Card>

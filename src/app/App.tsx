@@ -12,6 +12,8 @@ import { HistoryPage } from "@/features/history/HistoryPage";
 import { ComparisonPage } from "@/features/comparison/ComparisonPage";
 import { SizeSystemsPage } from "@/features/reference/SizeSystemsPage";
 import { GarmentCategoriesPage } from "@/features/reference/GarmentCategoriesPage";
+import { OntologyViewerPage } from "@/features/ontology-viewer/OntologyViewerPage";
+import { RulesExplorerPage } from "@/features/rules-explorer/RulesExplorerPage";
 import { ImportsExportsPage } from "@/features/import-export/ImportsExportsPage";
 import { SettingsPage } from "@/features/settings/SettingsPage";
 import { DiagnosticsPage } from "@/features/diagnostics/DiagnosticsPage";
@@ -65,6 +67,10 @@ export function App() {
         return <ComfortPreferencesPage state={state} />;
       case "garment-categories":
         return <GarmentCategoriesPage />;
+      case "ontology":
+        return <OntologyViewerPage state={state} />;
+      case "rules":
+        return <RulesExplorerPage />;
       case "brand-guides":
         return <BrandGuidesPage state={state} />;
       case "recommendation":

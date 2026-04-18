@@ -1,0 +1,47 @@
+{
+  "version": "menswear-v1",
+  "cuts": [
+    {
+      "id": "close",
+      "label": "Près du corps",
+      "description": "Réduit l’aisance cible, à utiliser seulement si la compression est acceptable.",
+      "dimensionDeltasCm": { "chestCm": -3, "waistCm": -1.5, "seatHipsCm": -1, "thighCm": -1, "bicepsCm": -1 }
+    },
+    {
+      "id": "slim",
+      "label": "Slim",
+      "description": "Coupe ajustée mais moins compressive que close.",
+      "dimensionDeltasCm": { "chestCm": -2, "waistCm": -1, "seatHipsCm": -0.8, "thighCm": -0.5, "bicepsCm": -0.7 }
+    },
+    {
+      "id": "regular",
+      "label": "Regular",
+      "description": "Coupe de référence sans delta additionnel.",
+      "dimensionDeltasCm": {}
+    },
+    {
+      "id": "relaxed",
+      "label": "Relaxed",
+      "description": "Ajoute de l’aisance pour confort et amplitude.",
+      "dimensionDeltasCm": { "chestCm": 4, "waistCm": 2, "seatHipsCm": 3, "thighCm": 2.5, "bicepsCm": 2 }
+    },
+    {
+      "id": "oversize",
+      "label": "Oversize",
+      "description": "Ajoute fortement du volume sur hauts et outerwear.",
+      "dimensionDeltasCm": { "chestCm": 8, "stomachCm": 7, "bicepsCm": 3, "waistCm": 3, "seatHipsCm": 4 }
+    },
+    {
+      "id": "straight",
+      "label": "Straight",
+      "description": "Bas droit, stabilise la cuisse et le mollet.",
+      "dimensionDeltasCm": { "thighCm": 2, "calfCm": 2 }
+    },
+    {
+      "id": "tapered",
+      "label": "Tapered",
+      "description": "Volume cuisse conservé, bas de jambe plus ajusté.",
+      "dimensionDeltasCm": { "thighCm": 1.5, "calfCm": -0.5 }
+    }
+  ]
+}
