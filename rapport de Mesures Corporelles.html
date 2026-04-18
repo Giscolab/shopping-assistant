@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesures Réelles - Shopping Assistant</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #2563eb;
+            --bg: #f1f5f9;
+            --card: #ffffff;
+            --text-main: #1e293b;
+            --text-sub: #64748b;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: var(--primary);
+            color: white;
+            border-radius: 16px 16px 0 0;
+            position: relative;
+        }
+
+        .last-update { font-size: 0.8rem; opacity: 0.8; }
+
+        /* Module de langue */
+        .lang-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.8rem;
+            transition: all 0.2s;
+        }
+        .lang-toggle:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .section {
+            background: var(--card);
+            margin-top: 2px;
+            padding: 20px;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        .section:last-child { border-radius: 0 0 16px 16px; border-bottom: none; }
+
+        h2 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .measure-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .measure-box {
+            background: #f8fafc;
+            padding: 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .measure-box:hover {
+            border-color: var(--accent);
+            background: #eff6ff;
+        }
+
+        .label {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--text-sub);
+            margin-bottom: 4px;
+        }
+
+        .value {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        .unit { font-size: 0.8rem; font-weight: 400; margin-left: 2px; }
+
+        .hint {
+            display: block;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-sub);
+            margin-top: 15px;
+        }
+
+        /* Notification Toast */
+        #toast {
+            visibility: hidden;
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+            z-index: 100;
+        }
+        #toast.show { visibility: visible; animation: fadeInUp 0.3s; }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translate(-50%, 20px); }
+            to { opacity: 1; transform: translate(-50%, 0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <button class="lang-toggle" onclick="toggleLanguage()" id="langBtn">EN</button>
+        <div class="last-update" data-fr="Profil de Mesures Réelles" data-en="Real Body Measurements">Profil de Mesures Réelles</div>
+        <h1 style="margin: 5px 0;" data-fr="Assistant Shopping" data-en="Shopping Assistant">Assistant Shopping</h1>
+        <div class="last-update" data-fr="Mise à jour : 18 avril 2026" data-en="Updated: April 18, 2026">Mise à jour : 18 avril 2026</div>
+    </header>
+
+    <div class="section">
+        <h2 data-fr="📊 Composition & Poids" data-en="📊 Composition & Weight">📊 Composition & Poids</h2>
+        <div class="measure-grid">
+            <div class="measure-box" onclick="copy('60.0', 'Weight')">
+                <span class="label" data-fr="Poids" data-en="Weight">Poids</span>
+                <span class="value">60.0<span class="unit">kg</span></span>
+            </div>
+            <div class="measure-box" onclick="copy('49.7', 'Lean Body Mass')">
+                <span class="label" data-fr="Masse Maigre" data-en="Lean Body Mass">Masse Maigre</span>
+                <span class="value">49.7<span class="unit">kg</span></span>
+            </div>
+            <div class="measure-box" onclick="copy('17.2', 'Body Fat')">
+                <span class="label" data-fr="Graisse Corporelle" data-en="Body Fat">Graisse Corporelle</span>
+                <span class="value">17.2<span class="unit">%</span></span>
+            </div>
+            <div class="measure-box" onclick="copy('1.7', 'Surface Area')">
+                <span class="label" data-fr="Surface Corporelle" data-en="Body Surface Area">Surface Corporelle</span>
+                <span class="value">1.7<span class="unit">m²</span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 data-fr="👕 Haut du corps" data-en="👕 Upper Body">👕 Haut du corps</h2>
+        <div class="measure-grid">
+            <div class="measure-box" onclick="copy('87.0', 'Chest')">
+                <span class="label" data-fr="Poitrine" data-en="Chest">Poitrine</span>
+                <span class="value">87.0<span class="unit">cm</span></span>
+            </div>
+            <div class="measure-box" onclick="copy('86.0', 'Stomach')">
+                <span class="label" data-fr="Ventre" data-en="Stomach">Ventre</span>
+                <span class="value">86.0<span class="unit">cm</span></span>
+            </div>
+            <div class="measure-box" onclick="copy('77.1', 'Waist')">
+                <span class="label" data-fr="Taille" data-en="Waist">Taille</span>
+                <span class="value">77.1<span class="unit">cm</span></span>
+            </div>
+            <div class="measure-box" onclick="copy('90.2', 'Seat (Hips)')">
+                <span class="label" data-fr="Fessiers (Seat)" data-en="Seat (Hips)">Fessiers (Seat)</span>
+                <span class="value">90.2<span class="unit">cm</span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 data-fr="💪 Bras" data-en="💪 Arms">💪 Bras</h2>
+        <div class="measure-grid">
+            <div class="measure-box" onclick="copy('25.0', 'Left Biceps')">
+                <span class="label" data-fr="Biceps Gauche" data-en="Left Biceps">Biceps Gauche</span>
+                <span class="value">25.0<span class="unit">cm</span></span>
+            </div>
+            <div class="measure-box" onclick="copy('25.0', 'Right Biceps')">
+                <span class="label" data-fr="Biceps Droit" data-en="Right Biceps">Biceps Droit</span>
+                <span class="value">25.0<span class="unit">cm</span></span>
+            </div>
+            <div class="measure-box" onclick="copy('24.2', 'Left Forearm')">
+                <span class="label" data-fr="Av-bras Gauche" data-en="Left Forearm">Av-bras Gauche</span>
+                <span class="value">24.2<span class="unit">cm</span></span>
+            </div>
+            <div class="measure-box" onclick="copy('23.8', 'Right Forearm')">
+                <span class="label" data-fr="Av-bras Droit" data-en="Right Forearm">Av-bras Droit</span>
+                <span class="value">23.8<span class="unit">cm</span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 data-fr="🦵 Jambes" data-en="🦵 Lower Body">🦵 Jambes</h2>
+        <div class="measure-grid">
+            <div class="measure-box" onclick="copy('47.8', 'Left Thigh')">
+                <span class="label" data-fr="Cuisse Gauche" data-en="Left Thigh">Cuisse Gauche</span>
+                <span class="value">47.8<span class="unit">cm</span></span>
+            </div>
+            <div class="measure-box" onclick="copy('48.0', 'Right Thigh')">
+                <span class="label" data-fr="Cuisse Droite" data-en="Right Thigh">Cuisse Droite</span>
+                <span class="value">48.0<span class="unit">cm</span></span>
+            </div>
+            <div class="measure-box" onclick="copy('34.3', 'Left Calf')">
+                <span class="label" data-fr="Mollet Gauche" data-en="Left Calf">Mollet Gauche</span>
+                <span class="value">34.3<span class="unit">cm</span></span>
+            </div>
+            <div class="measure-box" onclick="copy('34.4', 'Right Calf')">
+                <span class="label" data-fr="Mollet Droit" data-en="Right Calf">Mollet Droit</span>
+                <span class="value">34.4<span class="unit">cm</span></span>
+            </div>
+        </div>
+    </div>
+
+    <span class="hint" data-fr="💡 Astuce : Cliquez sur une valeur pour la copier." data-en="💡 Tip: Click on a value to copy it.">💡 Astuce : Cliquez sur une valeur pour la copier.</span>
+</div>
+
+<div id="toast">Copié !</div>
+
+<script>
+    let currentLang = 'fr';
+    const toastMsgs = {
+        fr: " copié !",
+        en: " copied!"
+    };
+
+    function toggleLanguage() {
+        currentLang = currentLang === 'fr' ? 'en' : 'fr';
+        
+        // Mise à jour de tous les textes avec l'attribut data-
+        document.querySelectorAll('[data-fr]').forEach(el => {
+            el.innerText = el.getAttribute('data-' + currentLang);
+        });
+        
+        // Mise à jour du bouton
+        document.getElementById('langBtn').innerText = currentLang === 'fr' ? 'EN' : 'FR';
+    }
+
+    function copy(val, label) {
+        navigator.clipboard.writeText(val);
+        var x = document.getElementById("toast");
+        x.innerText = label + " (" + val + ")" + toastMsgs[currentLang];
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 2000);
+    }
+</script>
+
+</body>
+</html>
