@@ -2,6 +2,7 @@ import { averageOptional, roundMeasurement } from "@/domain/units/measurements";
 import type { BodyProfile } from "@/domain/body-profile/schema";
 import { fitDelta, easeDelta, garmentTaxonomy, layeringDelta, stretchRelaxation } from "@/domain/garments/taxonomy";
 import type { DimensionRule } from "@/domain/garments/taxonomy";
+import { ontologyBundle } from "@/domain/ontology";
 import type { RecommendationDimension } from "@/domain/shared/enums";
 import type { BrandSizeGuide, SizeGuideRow } from "@/domain/sizing/schema";
 import { computeCandidateConfidence, computeCandidateScore, closeAlternativeThreshold } from "@/domain/sizing/confidence";
@@ -21,15 +22,28 @@ import type {
 } from "@/domain/recommendation/schema";
 
 export function getBodyDimension(profile: BodyProfile, dimension: RecommendationDimension): number | null {
+  const policy = ontologyBundle.measurementMapping.leftRightMeasurementResolutionPolicy.find(
+    (entry) => entry.canonical_dimension_id === dimension
+  );
+  const resolveBilateral = (left: number | null, right: number | null) => {
+    if (!policy || policy.resolution_strategy === "average") return averageOptional([left, right]);
+    if (policy.resolution_strategy === "max") {
+      if (left === null) return right;
+      if (right === null) return left;
+      return Math.max(left, right);
+    }
+    return averageOptional([left, right]);
+  };
+
   switch (dimension) {
     case "bicepsCm":
-      return averageOptional([profile.leftBicepsCm, profile.rightBicepsCm]);
+      return resolveBilateral(profile.leftBicepsCm, profile.rightBicepsCm);
     case "forearmCm":
-      return averageOptional([profile.leftForearmCm, profile.rightForearmCm]);
+      return resolveBilateral(profile.leftForearmCm, profile.rightForearmCm);
     case "thighCm":
-      return averageOptional([profile.leftThighCm, profile.rightThighCm]);
+      return resolveBilateral(profile.leftThighCm, profile.rightThighCm);
     case "calfCm":
-      return averageOptional([profile.leftCalfCm, profile.rightCalfCm]);
+      return resolveBilateral(profile.leftCalfCm, profile.rightCalfCm);
     case "footLengthMm":
       return profile.footLengthMm;
     default:
