@@ -127,11 +127,18 @@ export function importBrandGuideFromCsv(csv: string, fileName = "guide.csv"): Br
 }
 
 export function importBrandGuideFromJson(json: string, fileName = "guide.json"): BrandGuideImportResult {
-  const parsed = JSON.parse(json) as Partial<BrandGuideImportResult> & { guide?: BrandSizeGuide; brand?: Brand };
+  const parsed = JSON.parse(json) as Partial<BrandGuideImportResult> & { guide?: Partial<BrandSizeGuide>; brand?: Brand };
   const now = nowIso();
+
+  if (!parsed.guide || typeof parsed.guide !== "object") {
+    throw new Error('Le fichier JSON doit contenir un objet « guide ».');
+  }
+
+  const raw = parsed.guide;
   const brand: Brand = parsed.brand ?? {
     id: createId("brand"),
-    name: parsed.guide?.sourceName ?? "Marque importée",
+    name:
+      typeof raw.sourceName === "string" && raw.sourceName.trim().length > 0 ? raw.sourceName.trim() : "Marque importée",
     country: null,
     website: null,
     isSample: false,
@@ -139,13 +146,36 @@ export function importBrandGuideFromJson(json: string, fileName = "guide.json"):
     createdAt: now,
     updatedAt: now
   };
+
+  const garmentCategory: GarmentCategory = normalizeEnum(
+    typeof raw.garmentCategory === "string" ? raw.garmentCategory : undefined,
+    garmentCategories,
+    "tshirts"
+  );
+  const sizeSystem: SizeSystemCode = normalizeEnum(
+    typeof raw.sizeSystem === "string" ? raw.sizeSystem : undefined,
+    sizeSystems,
+    "INT"
+  );
+  const fabricStretch: StretchLevel = normalizeEnum(
+    typeof raw.fabricStretch === "string" ? raw.fabricStretch : undefined,
+    stretchLevels,
+    "low"
+  );
+  const defaultName = `${brand.name} - ${garmentCategory}`;
+  const name = typeof raw.name === "string" && raw.name.trim().length > 0 ? raw.name.trim() : defaultName;
+
   const guide = brandSizeGuideSchema.parse({
-    ...parsed.guide,
-    id: parsed.guide?.id ?? createId("guide"),
+    ...raw,
+    id: raw.id ?? createId("guide"),
     brandId: brand.id,
+    name,
+    garmentCategory,
+    sizeSystem,
+    fabricStretch,
     sourceType: "json_import",
     sourceName: fileName,
-    createdAt: parsed.guide?.createdAt ?? now,
+    createdAt: raw.createdAt ?? now,
     updatedAt: now
   });
   return { brand, guide, warnings: [] };
